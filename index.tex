@@ -5,9 +5,10 @@
 \usepackage{graphicx}
 \usepackage[margin=0.5in]{geometry}
 \usepackage{fancyhdr}
-\renewcommand\headrulewidth{0pt}
+\usepackage{graphicx}
+% \renewcommand\headrulewidth{0pt}
 \fancyhf{}
-\fancyhead[L]{Session 2018-2022}
+\fancyhead[L]{\vspace{3mm}Session 2018-2022}
 \fancyhead[R]{Automated Software Cost and Effort Estimation System}
 \fancyfoot[C]{\thepage}
 \pagestyle{fancy}
@@ -22,99 +23,17 @@
 
 \pagenumbering{roman}
 
-\begin{center}
-	\vspace{10mm}
+% Title Page
+\include{title.tex}
 
-	\includegraphics[height=3.5cm, width=10cm]{logo} \\
-	\vspace{10mm}
-
-	\Huge{\textbf{Automated Software Cost and Effort Estimation System}} \\
-	\vspace{10mm}
-
-	\Huge{\textbf{Final Year Project Documentation}} \\
-	\vspace{20mm}
-
-	\Large{\textbf{Submitted by}} \\
-	\vspace{15mm}
-
-	\Large{\textbf{Usman Ahmed \hspace{3cm} 70066997}}
-
-	\vspace{1mm}
-
-	\Large{\textbf{Faizan Ahmed \hspace{3cm} 70068241}}
-
-	\vspace{10mm}
-
-	\Large{\textbf{Project Supervisor}} \\
-	\vspace{3mm}
-	\Large{\textbf{Prof. Yasir Mehmood}}
-
-	\vspace{15mm}
-
-
-	\Large{\textbf{BACHELORS OF SCIENCE IN SOFTWARE ENGINEERING}} \\
-	\vspace{10mm}
-	\Large{\textbf{DEPARTMENT OF SOFTWARE ENGINEERING}} \\
-	\vspace{3mm}
-	\Large{\textbf{THE UNIVERSITY OF LAHORE}} \\
-
-
-
-
-
-
-\end{center}
-
-
-\pagebreak
-
+% Table of contents page
 \tableofcontents
 \pagebreak
 
 \pagenumbering{arabic}
 
 
-% For adding un numbered sections in TOC
-% \section*{Abstract}
-% \addcontentsline{toc}{section}{\protect\numberline{}Abstract}%
-
-\section{Introduction}
-
-\vspace{20mm}
-
-\Huge{\textbf{Introduction to Problem}}
-
-\vspace{20mm}
-
-
-\begin{abstract}
-	\blindtext
-\end{abstract}
-
-\vspace{20mm}
-
-\large{\textbf{Outline}}
-
-\begin{center}
-	\begin{itemize}
-		\item Introduction
-		\item Purpose
-		\item Objectives
-		\item Existing Solutions
-		\item Proposed Solution
-		\item Novelty
-		\item Executive Summary
-	\end{itemize}
-\end{center}
-\pagebreak
-
-
-\subsection{Introduction}
-\blindtext[2]
-
-\subsection{Purpose}
-\blindtext[2]
-
-
+% Chapter 1 Intorduction
+\include{sections/introduction/title-introduction.tex}
 
 \end{document}
