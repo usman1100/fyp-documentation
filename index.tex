@@ -6,7 +6,7 @@
 \usepackage[margin=0.5in]{geometry}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
-% \renewcommand\headrulewidth{0pt}
+% \renewcommand\headrulewidth{0pt} % remove header rule
 \fancyhf{}
 \fancyhead[L]{\vspace{3mm}Session 2018-2022}
 \fancyhead[R]{Automated Software Cost and Effort Estimation System}
@@ -21,19 +21,25 @@
 \begin{document}
 
 
-\pagenumbering{roman}
+	\pagenumbering{roman}
 
-% Title Page
-\include{title.tex}
-
-% Table of contents page
-\tableofcontents
-\pagebreak
-
-\pagenumbering{arabic}
+	% Title Page
+	\include{title.tex}
 
 
-% Chapter 1 Intorduction
-\include{sections/introduction/title-introduction.tex}
+	% Abstract, Dedication and Acknowledgements
+	\include{preamble.tex}
+
+
+
+	% Table of contents page
+	\tableofcontents
+	\pagebreak
+
+	
+	
+	\pagenumbering{arabic}
+	% Chapter 1 Intorduction
+	\include{sections/introduction/title-introduction.tex}
 
 \end{document}
