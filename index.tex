@@ -2,13 +2,12 @@
 \usepackage[english]{babel}
 \usepackage{blindtext}
 \usepackage[hidelinks]{hyperref}
-\usepackage{graphicx}
 \usepackage[margin=0.5in]{geometry}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 % \renewcommand\headrulewidth{0pt} % remove header rule
 \fancyhf{}
-\fancyhead[L]{\vspace{3mm}Session 2018-2022}
+\fancyhead[L]{\vspace{3mm}Session 2018--2022}
 \fancyhead[R]{Automated Software Cost and Effort Estimation System}
 \fancyfoot[C]{\thepage}
 \pagestyle{fancy}
@@ -40,6 +39,11 @@
 	
 	\pagenumbering{arabic}
 	% Chapter 1 Intorduction
-	\include{sections/introduction/title-introduction.tex}
+	\include{sections/introduction/introduction-index.tex}
+
+	% Chapter 2 Software Requirements Specification
+	\include{sections/srs/srs-index.tex}
+
+	
 
 \end{document}
