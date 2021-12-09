@@ -8,7 +8,7 @@
 
 
 \begin{abstract}
-	In this chapter, we will be introducing the problem and the requirements that will be used to solve it. The purpose and main objectives that are at the core of the project will be explained in a concise manner. Along with those details we will also discuss the already existing solutions to the current problem and how these existing solutions are no longer a viable choice for consumers. We shall also discuss how our solution fixes the issues that were found in the existing solutions and how our solution/product will be a superior and generally better. After these details an executive summary will summarize all of the above discussions into a concise manner.
+	In this chapter, we will be introducing the problem and the requirements that will be used to solve it. The purpose and main objectives that are at the core of the project will be explained in a concise manner. Along with those details we will also discuss the already existing solutions to the current problem and how these existing solutions are no longer a viable choice for consumers. We shall also discuss how our solution fixes the issues that were found in the existing solutions and how our system will be a superior and generally better. After these details an executive summary will summarize all of the above discussions into a concise manner.
 \end{abstract}
 
 \vspace{20mm}
@@ -22,8 +22,9 @@
 
 \begin{center}
 	\begin{itemize}
-		\item Introduction
+		\item Overview
 		\item Purpose
+		\item Problem Background
 		\item Objectives
 		\item Existing Solutions
 		\item Proposed Solution
@@ -40,16 +41,48 @@
 
 
 
-\subsection{Introduction}
-The software industry is a multi billion dollar industry, in-fact it is projected to be around 1 trillion USD in 2023. This is due to the fact that software development is complex and requires a lot of resources. And just like any complex engineering project, much of these resources, time and effort goes into planning the development of the project. Successfully software developers and companies realize the importance of a well organized and well planned software development process. Without one, the project will more than likely fail to be completed. {\it{"Without requirements or design , programming is the art of adding bugs to an empty text file"}}, a humorous quote from Louis Srygley, well summarizes the need for  a well planned and estimated software development process.
-
-After all the planning and design phases, team leads and managers have to come up with a time and resource estimate for the project. This is a crucial phase and a lot can go wrong here. According to a survey over 60\% of software projects fail to complete in the estimated time and budget. 
+\subsection{Overview}
 
 
+Software Effort Estimation (SEE) studies have started since the 1960s and continuous research has been conducted due to numerous claims on attaining accurate
+estimation results. In the planning phase
+of project management, SEE is an essential feature to deliver a successful software
+system. Software effort estimation is defined as a process of estimating the amount of
+work and hours required to develop software systems. 
+
+Today, developing software systems are
+expensive and difficult. The software engineering presents several ways to quantify a
+project. One of the most important steps in software engineering process is to
+accurately estimate the cost, effort and time which has an important role in determining
+the success or failure of the project. The software development cost and effort
+estimation are important in development process and customer requirements. The
+reports on conducting projects show that there is almost no control over software
+projects and usually, the scale of the accomplished work is more than what has been
+estimated before. Therefore, usually projects terminate later than planned time .
+
+According to the CHAOS report (2015) of The Standish Group International,
+60\% of IT projects were not on their scheduled time and 56\% were not on budget. The
+International Society of Parametric Analysis (ISPA) studied that inaccurately
+estimating the staff’s skills level, underestimating software size and lack of
+requirement’s understandings are some of the core reasons behind project failures. To date, researchers have therefore introduced different types of SEE
+techniques. On the other hand, the majority of the techniques, were proposed at the
+start of the software development process, based on pre-defined requirements.
+
+As a solutions to all of the problems and complications above, we are introducing a solution to improve the accuracy of the process of cost and effort estimation. We are proposing a solution that will convert the manual process of guessing the project's effort, to a more standardized and reliable method of estimation. For this solution we have conducted extensive research studying many solutions and techniques to the same problem. Along with that we have also implemented our own custom machine learning models to further improve results compared to traditional formula based estimations. Using these machine learning models allows the system to make better assumptions about the project thus giving far more accurate results than traditional methods like UCP. 
+
+The system will accept "Use Case Points" as input. Along with that the user will also have to specify the project's programming language and the used framework. This will help adjust the technical factors that influence the final calculated estimation for the project. 
 
 
 
 
+
+
+\subsection{Problem Background}
+Any software project’s success depends primarily on its accuracy in estimating effort. To date, a lot of research has been conducted to estimate the accuracy of software effort using distinctive techniques. In any case, researchers and specialists are striving to recognize which estimation technique gives increasingly accurate outcomes on the given datasets and the other applicable attributes. The number of software projects fails due to incomplete requirements and inaccuracy in software estimation (R. Kaur and Sengupta, 2013). The Project Management Institute (PMI) conducted a survey in 2017, investigated that 69\% of software successfully achieved the project’s original goals and business priorities, 43\% were not finished within their initial budgets, 48\% were delivered late and 32\% failed due to budget lost (PMI's.,2017).
+
+
+The factors that influence effort and cost during the conception and design phases have been extensively researched, mostly using cost-estimating techniques. According to Doloi (2013), proper cost and effort estimation is the key to avoiding project cost overruns, regardless of management skill or financial strength of the contractor. Cost and effort estimation is a technical technique for predicting expenditures, and its success is dependent on the resources and project execution.
+According to widely published initial estimates, project complexity, technology needs, and project team requirements are among the factors influencing cost performance.
 
 
 
@@ -57,12 +90,9 @@ After all the planning and design phases, team leads and managers have to come u
 
 
 \subsection{Purpose}
-The main purpose of our product is to improve the accuracy of estimate predictions. This will be done using state-of-the-art machine learning algorithms that are trained on previous software development projects. The classifier will also improve significantly with the passage of time, since we will be recording statistics of all the projects that will be entered in the product. 
+The main purpose of our system is to improve the accuracy of estimate calculations. This will be done using state-of-the-art machine learning algorithms that are trained on previous software development projects. The classifier will also improve significantly with the passage of time, since we will be recording statistics of all the projects that will be entered in the system.
 
- The secondary purpose is to provide a platform where developers and managers can collaborate and share their options on the project's development and create estimates manually. Our product will basically give it's users the option to choose between different estimation techniques but the recommended technique will still be the machine learning classifier.s
-
-
-
+This system aims to propose an ensemble model to improve the estimation accuracy of software development effort. The ensemble model is incorporated with Use Case Point (algorithmic), expert judgement (non-algorithmic) and Case-Based Reasoning (machine learning) techniques to make an ensemble.
 
 
 
@@ -74,13 +104,12 @@ The main purpose of our product is to improve the accuracy of estimate predictio
 
 \subsection{Objective}
 Following are the most important objectives of the project.
-\begin{itemize}
-	\item Improve the accuracy of software cost and effort estimation techniques.
-	\item Get up-to 50\% of software development organizations to switch to automated software cost and effort estimation techniques.
-	\item Get managers to switch to our product by automating their current estimation workflows and then  integrating our specialized techniques with their existing workflows.
-	\item Making our product compatible with most of today's trending programming languages and their popular frameworks.
-	\item Making our product relevant among the software development organizations and get 20 large software development organizations and/or 50 medium scale organizations to switch to our product by the end of 2023. And to integrate our product with their existing management routines.
-\end{itemize}
+\begin{enumerate}[(a)]
+	\item To improve the accuracy of software cost and effort estimation techniques.
+	\item To get managers to switch to our system by automating their current estimation workflows and then  integrating our specialized techniques with their existing workflows.
+	\item To make our system compatible with most of today's trending programming languages and their popular frameworks.
+	\item To enable software development companies to estimate their projects earlier in time.
+\end{enumerate}
 
 
 
@@ -98,10 +127,10 @@ Following are the most important objectives of the project.
 There are a few existing solutions in this problem space. Some of them are now not maintained and are deprecated. Following is a list of similar projects
 \begin{itemize}
 	\item {\bf{SEER For Software}}\newline
-	SEER is a general purpose estimation tool that also has a product for software projects' estimation. It accepts input in form of SLOC (Source lines of code), function points, use cases and some more less popular options. After processing these inputs using proprietary models, the output of the program is as follows: Project time duration, development hours and accuracy of estimations.
+	SEER is a general purpose estimation tool that also has a system for software projects' estimation. It accepts input in form of SLOC (Source lines of code), function points, use cases and some more less popular options. After processing these inputs using proprietary models, the output of the program is as follows: Project time duration, development hours and accuracy of estimations.
 
 	\item {\bf{TruePlanning \small{\textregistered}}}\newline
-	This product is calculates its estimates using the PRICE model. Developed in 1975, TruePlanning is also a general purpose estimation system.
+	This system is calculates its estimates using the PRICE model. Developed in 1975, TruePlanning is also a general purpose estimation system.
 	
 \end{itemize}
 
@@ -123,7 +152,7 @@ Following are some serious shortcomings or disadvantages with the currently exis
 	\item Outdated models that cannot adapt to today's rapidly changing and extremely diverse development languages and frameworks.
 	\item No platform to enable communication between management and developers to discuss and agree to a better estimate
 	\item Older and less commonly used input formats like SLOC and function points
-	\item Outdated subscription methods. All of these programs implement a {\it{One Time Payment}} method. The disadvantage here is that the one time payment is a huge sum of money and may throw off a potential customer's interest in the product.
+	\item Outdated subscription methods. All of these programs implement a {\it{One Time Payment}} method. The disadvantage here is that the one time payment is a huge sum of money and may throw off a potential customer's interest in the system.
 \end{itemize}
 
 
@@ -137,19 +166,43 @@ Following are some serious shortcomings or disadvantages with the currently exis
 \subsection{Proposed Solution}
 The proposed solution is a web-based SPA. This application will be a platform for performing all sorts of estimations for your software project. There will be two types of users, managers and developers. A manager can create a "project" and assign developers into it. The assigned developers can then give their estimates in different "rounds". After the estimates of all developers are close enough then it would regarded as the agreed estimate.
 
-How ever if the team chooses to go towards the automatic technique, they will have to enter their project's attributes in form of "use case points". After that they will enter the "stack" that they are using to develop their project which will help set the environmental factors and productivity factors. The system will then calculate the estimates for the project using either the simple UCP technique or the machine learning methods (according to the user's preferences). The estimates will be displayed in a various forms like tables, graphs and charts.
+How ever if the team chooses to go towards the automatic technique, they will have to enter their project's attributes in form of "use case points". After that they will enter the "stack" that they are using to develop their project which will help set the environmental factors and technical factors. The system will then calculate the estimates for the project using either the simple UCP technique or the machine learning methods (according to the user's preferences). The estimates will be displayed in a various forms like tables, graphs and charts.
 
 
+\subsection{Comparison}
+We have compiled a comprehensive list of important issues in the existing solutions. After stating the problem we have also proved how our proposed system solves that problem. Following is a list of problem and their solutions
+
+\begin{center}
+
+	\large{\textbf{Existing Solutions}} \hspace{30mm} \large{\textbf{Proposed Solution}}
+	\vspace{5mm}
+	\large
+
+	\begin{tabularx}{\textwidth}{|X|X|}
+
+		\hline
+		{\textbf{1)} Use older estimations models are used that can no longer accurately estimate today's versatile development technologies} & {\textbf{1)} Combines a variety of well proven estimations models into an ensemble model that is trained on historical data} \\
+		\hline
+		{\textbf{2)} No multi model support, all calculations are based on one single algorithm hence single point of failure is applicable} & {\textbf{2)} Has multiple methods of estimation including manual methods as well as algorithmic and machine learning methods} \\
+		\hline
+		{\textbf{3)} Less accurate estimations. Since these programs have not been update according to modern development practices, their accuracies have degraded overtime} & {\textbf{3)} Uses state of the art estimation models that are trained on modern datasets, hence accuracy is far better} \\
+		\hline
+		{\textbf{4)} Don't come with many features. No platform to implement manual estimation techniques of effort estimation } & {\textbf{4)} Provides platform to enable communication between management and developers to discuss and agree to a better estimate} \\
+		\hline
+		
+
+	\end{tabularx}
+\end{center}
 
 
 
 
 
 \subsection{Novelty}
-Here are some points that make our product a better solution than the existing ones mentioned above.
+Here are some points that make our system a better solution than the existing ones mentioned above.
 
 \begin{itemize}
-	\item {\bfseries Latest data:} Our predictions and estimates are based on the data that is collected from the past few years. This data is obtained from the UCP dataset. Along with that, we have also expanded the UCP dataset from 72 to 99 projects by collecting data from some development organizations. Newer projects are created using latest technologies and frameworks hence they are a better fit to compare with the future projects. Also the product itself will be collecting data from all of it's customer for the sake of self improvement.
+	\item {\bfseries Latest data:} Our calculations and estimates are based on the data that is collected from the past few years. This data is obtained from the UCP dataset. Along with that, we have also expanded the UCP dataset from 72 to 99 projects by collecting data from some development organizations. Newer projects are created using latest technologies and frameworks hence they are a better fit to compare with the future projects. Also the system itself will be collecting data from all of it's customer for the sake of self improvement.
 	
 	
 	\item {\bfseries Machine Learning:} In the past all manual or automated estimations were done using simple mathematical formulas and techniques. This approach is very rigid as it doesn't leave much room for flexibility. With machine learning techniques, no two estimations are the same. The system will be able to learn from the past data and make better estimates.
@@ -162,15 +215,19 @@ Here are some points that make our product a better solution than the existing o
 \end{itemize}
 
 
+\subsection{Significance}
+In this section we will be discussing the major impacts of our systems on the software development process as well as how it will affect software development industries.
 
 
 
 
 
+\subsection{Summary}
+The proposed system aspires to revolutionize and update the methodologies of software cost and effort estimation. This particular area of software engineering hasn't been worked on in order to create an effective and usable system. The Proposed system implements state of the art machine learning algorithms to give personalized and highly accurate estimations to all sorts of software projects. This accuracy is achieved by training the model on modern datasets collected from actual software development companies of successfully completed projects.This system will provide multiple methods to calculate estimates such as the Delphi Technique, UCP Technique and Machine Learning techniques.
 
-\subsection{Executive Summary}
-\blindtext
+
+Along with the automated cost estimation services, the system will also provide a platform to collaborate with developers and managers to discuss and agree on a better estimate. This platform is implemented to enable the use of manual estimation techniques such as Delphi.
 
 
-\blindtext
+
 
