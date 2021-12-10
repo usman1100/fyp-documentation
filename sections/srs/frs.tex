@@ -1,573 +1,588 @@
-\newcommand{\splitcell}[2][c]{%
-  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
-\subsubsection{FR-01: Register}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-01 \\
-      \hline
-      \textbf{Name} & Register \\
-      \hline
-      \textbf{Description} & Register a new user \\
-      \hline
-      \textbf{Input} & username, password, password\_confirmation, email \\
-      \hline
-      \textbf{Output} & A new user is created in the database \\
-      \hline
-      \textbf{Requirements} & Valid username, valid email, password that contains at least 8 characters, password\_confirmation that matches the password \\
-      \hline
-  \end{tabularx}
-\end{center}
 
-\subsubsection{FR-02: Login}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-02 \\
-      \hline
-      \textbf{Name} & Login \\
-      \hline
-      \textbf{Description} & Login to the application \\
-      \hline
-      \textbf{Input} & username or email, password \\
-      \hline
-      \textbf{Output} & User is logged in, a JWT token is issued \\
-      \hline
-      \textbf{Requirements} & Valid username or email, matching password \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-01: Register}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-01 \\
+            \hline
+            \textbf{Name} & Register \\
+            \hline
+            \textbf{Description} & Register a new user \\
+            \hline
+            \textbf{Input} & username, password, password\_confirmation, email \\
+            \hline
+            \textbf{Output} & A new user is created in the database \\
+            \hline
+            \textbf{Requirements} & Valid username, valid email, password that contains at least 8 characters, password\_confirmation that matches the password \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-03: OAuth}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-03 \\
-      \hline
-      \textbf{Name} & OAuth \\
-      \hline
-      \textbf{Description} & Login to the application using OAuth \\
-      \hline
-      \textbf{Input} & OAuth token \\
-      \hline
-      \textbf{Output} & User is logged in, a JWT token is issued \\
-      \hline
-      \textbf{Requirements} & Valid OAuth token \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-02: Login}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-02 \\
+            \hline
+            \textbf{Name} & Login \\
+            \hline
+            \textbf{Description} & Login to the application \\
+            \hline
+            \textbf{Input} & username or email, password \\
+            \hline
+            \textbf{Output} & User is logged in, a JWT token is issued \\
+            \hline
+            \textbf{Requirements} & Valid username or email, matching password \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-04: Forget Password}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-04 \\
-      \hline
-      \textbf{Name} & Forgot password \\
-      \hline
-      \textbf{Description} & Send an email to the user with a link to reset their password \\
-      \hline
-      \textbf{Input} & email \\
-      \hline
-      \textbf{Output} & An email is sent to the user with a link to reset their password \\
-      \hline
-      \textbf{Requirements} & Valid email \\
-      \hline
-  \end{tabularx}
-\end{center}
-\newpage
+    \subsubsection{FR-03: OAuth}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-03 \\
+            \hline
+            \textbf{Name} & OAuth \\
+            \hline
+            \textbf{Description} & Login to the application using OAuth \\
+            \hline
+            \textbf{Input} & OAuth token \\
+            \hline
+            \textbf{Output} & User is logged in, a JWT token is issued \\
+            \hline
+            \textbf{Requirements} & Valid OAuth token \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-05: Reset Password}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-05 \\
-      \hline
-      \textbf{Name} & Reset password \\
-      \hline
-      \textbf{Description} & Reset the user's password \\
-      \hline
-      \textbf{Input} & token, password, password\_confirmation \\
-      \hline
-      \textbf{Output} & The user's password is reset \\
-      \hline
-      \textbf{Requirements} & Valid token, valid password, password\_confirmation that matches the password \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-04: Forgot password}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-04 \\
+            \hline
+            \textbf{Name} & Forgot password \\
+            \hline
+            \textbf{Description} & Send an email to the user with a link to reset their password \\
+            \hline
+            \textbf{Input} & email \\
+            \hline
+            \textbf{Output} & An email is sent to the user with a link to reset their password \\
+            \hline
+            \textbf{Requirements} & Valid email \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    \newpage
+    
 
+    \subsubsection{FR-05: Reset password}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-05 \\
+            \hline
+            \textbf{Name} & Reset password \\
+            \hline
+            \textbf{Description} & Reset the user's password \\
+            \hline
+            \textbf{Input} & token, password, password\_confirmation \\
+            \hline
+            \textbf{Output} & The user's password is reset \\
+            \hline
+            \textbf{Requirements} & Valid token, valid password, password\_confirmation that matches the password \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-06: Confirm Account}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-06 \\
-      \hline
-      \textbf{Name} & Confirm account \\
-      \hline
-      \textbf{Description} & Confirm the user's account \\
-      \hline
-      \textbf{Input} & token \\
-      \hline
-      \textbf{Output} & The user's account is confirmed \\
-      \hline
-      \textbf{Requirements} & Valid token \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-06: Confirm account}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-06 \\
+            \hline
+            \textbf{Name} & Confirm account \\
+            \hline
+            \textbf{Description} & Confirm the user's account \\
+            \hline
+            \textbf{Input} & token \\
+            \hline
+            \textbf{Output} & The user's account is confirmed \\
+            \hline
+            \textbf{Requirements} & Valid token \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-07: Delete Account}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-07 \\
-      \hline
-      \textbf{Name} & Delete account \\
-      \hline
-      \textbf{Description} & Delete the user's account \\
-      \hline
-      \textbf{Input} & token \\
-      \hline
-      \textbf{Output} & The user's account is deleted \\
-      \hline
-      \textbf{Requirements} & Valid token \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-07: Delete account}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-07 \\
+            \hline
+            \textbf{Name} & Delete account \\
+            \hline
+            \textbf{Description} & Delete the user's account \\
+            \hline
+            \textbf{Input} & token \\
+            \hline
+            \textbf{Output} & The user's account is deleted \\
+            \hline
+            \textbf{Requirements} & Valid token \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-08: Create Initial Account}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-08 \\
-      \hline
-      \textbf{Name} & Create initial account \\
-      \hline
-      \textbf{Description} & Create the initial account \\
-      \hline
-      \textbf{Input} & role \\
-      \hline
-      \textbf{Output} & A user's information is complete \\
-      \hline
-      \textbf{Requirements} & A role, either developer or manager \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-08: Edit account info}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-08 \\
+            \hline
+            \textbf{Name} & Edit account info \\
+            \hline
+            \textbf{Description} & Edit the user's account info \\
+            \hline
+            \textbf{Input} & token, username, email \\
+            \hline
+            \textbf{Output} & The user's account info is updated \\
+            \hline
+            \textbf{Requirements} & Valid token, valid username, valid email \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    \newpage
+    
 
-\subsubsection{FR-09: Create Initial Account usmanError}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-09 \\
-      \hline
-      \textbf{Name} & Create initial account \\
-      \hline
-      \textbf{Description} & Create the initial account \\
-      \hline
-      \textbf{Input} & username, password, email \\
-      \hline
-      \textbf{Output} & The initial account is created \\
-      \hline
-      \textbf{Requirements} & Valid username, valid email, password that contains at least 8 characters \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-09: Edit interface preferences}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-09 \\
+            \hline
+            \textbf{Name} & Edit interface preferences \\
+            \hline
+            \textbf{Description} & Edit the user's interface preferences \\
+            \hline
+            \textbf{Input} & token, theme, language \\
+            \hline
+            \textbf{Output} & The user's interface preferences are updated \\
+            \hline
+            \textbf{Requirements} & Valid token, valid theme, valid language \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-10: Edit Account Info.}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-10 \\
-      \hline
-      \textbf{Name} & Edit account info \\
-      \hline
-      \textbf{Description} & Edit the user's account info \\
-      \hline
-      \textbf{Input} & token, username, email \\
-      \hline
-      \textbf{Output} & The user's account info is updated \\
-      \hline
-      \textbf{Requirements} & Valid token, valid username, valid email \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-10: Create Project}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-10 \\
+            \hline
+            \textbf{Name} & Create Project \\
+            \hline
+            \textbf{Description} & The manager creates a fresh project \\
+            \hline
+            \textbf{Input} & use cases (file/forms), add developers(optional), project name, technology \\
+            \hline
+            \textbf{Output} & A new project is created in the database with the ID of its manager \\
+            \hline
+            \textbf{Requirements} & Use cases, name, technology name \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-11: Edit Interface Preference}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-11 \\
-      \hline
-      \textbf{Name} & Edit interface preferences \\
-      \hline
-      \textbf{Description} & Edit the user's interface preferences \\
-      \hline
-      \textbf{Input} & token, theme, language \\
-      \hline
-      \textbf{Output} & The user's interface preferences are updated \\
-      \hline
-      \textbf{Requirements} & Valid token, valid theme, valid language \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-11: Edit Project}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-11 \\
+            \hline
+            \textbf{Name} & Edit Project \\
+            \hline
+            \textbf{Description} & The manager edits an existing project \\
+            \hline
+            \textbf{Input} & use cases (file/forms), project name, technology, (all optional), project ID(needed) \\
+            \hline
+            \textbf{Output} & The referred project is  \\
+            \hline
+            \textbf{Requirements} & Use cases, name, technology name, manager logged in, project exists \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-12: Create Project}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-12 \\
-      \hline
-      \textbf{Name} & Create Project \\
-      \hline
-      \textbf{Description} & The manager creates a fresh project \\
-      \hline
-      \textbf{Input} & use cases (file/forms), add developers(optional), project name, technology \\
-      \hline
-      \textbf{Output} & A new project is created in the database with the ID of its manager \\
-      \hline
-      \textbf{Requirements} & Use cases, name, technology name \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-12: Delete Project}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-12 \\
+            \hline
+            \textbf{Name} & Delete Project \\
+            \hline
+            \textbf{Description} & The manager removes an existing project from database \\
+            \hline
+            \textbf{Input} & Manager clicks on delete project and clicks Yes \\
+            \hline
+            \textbf{Output} & The referred project is removed from database \\
+            \hline
+            \textbf{Requirements} & Project ID, manager logged in \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    \newpage
+    
 
-\subsubsection{FR-13: Edit Project}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-13 \\
-      \hline
-      \textbf{Name} & Edit Project \\
-      \hline
-      \textbf{Description} & The manager edits an existing project \\
-      \hline
-      \textbf{Input} & use cases (file/forms), project name, technology, (all optional), project ID(needed) \\
-      \hline
-      \textbf{Output} & The referred project is  \\
-      \hline
-      \textbf{Requirements} & Use cases, name, technology name, manager logged in, project exists \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-13: Add Developer}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-13 \\
+            \hline
+            \textbf{Name} & Add Developer \\
+            \hline
+            \textbf{Description} & The manager assigns a developer to the project \\
+            \hline
+            \textbf{Input} & Manager clicks on add new developer and types developer's username \\
+            \hline
+            \textbf{Output} & A new developer is added to projects developer's list \\
+            \hline
+            \textbf{Requirements} & Project ID, manager logged in, developer username \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-14: Delete Project}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-14 \\
-      \hline
-      \textbf{Name} & Delete Project \\
-      \hline
-      \textbf{Description} & The manager removes an existing project from database \\
-      \hline
-      \textbf{Input} & Manager clicks on delete project and clicks Yes \\
-      \hline
-      \textbf{Output} & The referred project is removed from database \\
-      \hline
-      \textbf{Requirements} & Project ID, manager logged in \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-14: Remove Developer}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-14 \\
+            \hline
+            \textbf{Name} & Remove Developer \\
+            \hline
+            \textbf{Description} & The manager removes a developer from the project \\
+            \hline
+            \textbf{Input} & Manager goes into developers list and clicks remove button and then clicks Yes \\
+            \hline
+            \textbf{Output} & The developer is removed from the project's developers list \\
+            \hline
+            \textbf{Requirements} & Project ID, manager logged in, developer username \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-15: Add Developer}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-15 \\
-      \hline
-      \textbf{Name} & Add Developer \\
-      \hline
-      \textbf{Description} & The manager assigns a developer to the project \\
-      \hline
-      \textbf{Input} & Manager clicks on add new developer and types developer's username \\
-      \hline
-      \textbf{Output} & A new developer is added to projects developer's list \\
-      \hline
-      \textbf{Requirements} & Project ID, manager logged in, developer username \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-15: Edit Developer Permissions}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-15 \\
+            \hline
+            \textbf{Name} & Edit Developer Permissions \\
+            \hline
+            \textbf{Description} & Manager changes a developer's access level to the project \\
+            \hline
+            \textbf{Input} & Manager goes tp developers list and clicks on change role on a developer. They then choose either View or Edit \\
+            \hline
+            \textbf{Output} & Project permissions are edited \\
+            \hline
+            \textbf{Requirements} & Project ID, Developer ID, Permission type, manager logged in \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-16: Remove Developer}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-16 \\
-      \hline
-      \textbf{Name} & Remove Developer \\
-      \hline
-      \textbf{Description} & The manager removes a developer from the project \\
-      \hline
-      \textbf{Input} & Manager goes into developers list and clicks remove button and then clicks Yes \\
-      \hline
-      \textbf{Output} & The developer is removed from the project's developers list \\
-      \hline
-      \textbf{Requirements} & Project ID, manager logged in, developer username \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-16: Calculate UCP}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-16 \\
+            \hline
+            \textbf{Name} & Calculate UCP \\
+            \hline
+            \textbf{Description} & Get UCP estimation of project using use cases \\
+            \hline
+            \textbf{Input} & Use Cases, environmental factors, technical factors \\
+            \hline
+            \textbf{Output} & An integer representing the UCP estimation in man hours \\
+            \hline
+            \textbf{Requirements} & manager logged in, use at least 2 cases are entered \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    \newpage
+    
 
-\subsubsection{FR-17: Edit Developer Permission}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-17 \\
-      \hline
-      \textbf{Name} & Edit Developer Permissions \\
-      \hline
-      \textbf{Description} & Manager changes a developer's access level to the project \\
-      \hline
-      \textbf{Input} & Manager goes tp developers list and clicks on change role on a developer. They then choose either View or Edit \\
-      \hline
-      \textbf{Output} & Project permissions are edited \\
-      \hline
-      \textbf{Requirements} & Project ID, Developer ID, Permission type, manager logged in \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-17: Get Machine Learning Estimate}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-17 \\
+            \hline
+            \textbf{Name} & Get Machine Learning Estimate \\
+            \hline
+            \textbf{Description} & Calculate estimate using machine learning model \\
+            \hline
+            \textbf{Input} & Use Cases, environmental factors, technical factors \\
+            \hline
+            \textbf{Output} & An integer representing the machine learning estimation in man hours \\
+            \hline
+            \textbf{Requirements} & manager logged in, use at least 2 cases are entered \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-18: Calculate UCP}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-18 \\
-      \hline
-      \textbf{Name} & Calculate UCP \\
-      \hline
-      \textbf{Description} & Get UCP estimation of project using use cases \\
-      \hline
-      \textbf{Input} & Use Cases, environmental factors, technical factors \\
-      \hline
-      \textbf{Output} & An integer representing the UCP estimation in man hours \\
-      \hline
-      \textbf{Requirements} & manager logged in, use at least 2 cases are entered \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-18: Start Manual Estimation Round}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-18 \\
+            \hline
+            \textbf{Name} & Start Manual Estimation Round \\
+            \hline
+            \textbf{Description} & Create an empty round in current project \\
+            \hline
+            \textbf{Input} & Manager clicks on start manual estimation \\
+            \hline
+            \textbf{Output} & Empty round is created in database for current project \\
+            \hline
+            \textbf{Requirements} & Manager logged in, project exists, project has at least two use case, at least one developer assigned to project \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-19: Get Machine Learning Estimate}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-19 \\
-      \hline
-      \textbf{Name} & Get Machine Learning Estimate \\
-      \hline
-      \textbf{Description} & Calculate estimate using machine learning model \\
-      \hline
-      \textbf{Input} & Use Cases, environmental factors, technical factors \\
-      \hline
-      \textbf{Output} & An integer representing the machine learning estimation in man hours \\
-      \hline
-      \textbf{Requirements} & manager logged in, use at least 2 cases are entered \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-19: End Round}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-19 \\
+            \hline
+            \textbf{Name} & End Round \\
+            \hline
+            \textbf{Description} & End current round, locking in all estimates given so far \\
+            \hline
+            \textbf{Input} & Manager clicks end round \\
+            \hline
+            \textbf{Output} & Round length is increased by one and all estimates are locked in \\
+            \hline
+            \textbf{Requirements} & Round exists, manager logged in, at least one estimate is made \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-20: Start Manual Estimation Round}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-20 \\
-      \hline
-      \textbf{Name} & Start Manual Estimation Round \\
-      \hline
-      \textbf{Description} & Create an empty round in current project \\
-      \hline
-      \textbf{Input} & Manager clicks on start manual estimation \\
-      \hline
-      \textbf{Output} & Empty round is created in database for current project \\
-      \hline
-      \textbf{Requirements} & Manager logged in, project exists, project has at least two use case, at least one developer assigned to project \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-20: Clear Round}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-20 \\
+            \hline
+            \textbf{Name} & Clear Round \\
+            \hline
+            \textbf{Description} & Clear current round's estimates \\
+            \hline
+            \textbf{Input} & Manager clicks on clear round \\
+            \hline
+            \textbf{Output} & All of estimates made for this round are deleted \\
+            \hline
+            \textbf{Requirements} & Round exists, manager logged in, at least one estimate is made \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    \newpage
+    
 
-\subsubsection{FR-21: End Round}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-21 \\
-      \hline
-      \textbf{Name} & End Round \\
-      \hline
-      \textbf{Description} & End current round, locking in all estimates given so far \\
-      \hline
-      \textbf{Input} & Manager clicks end round \\
-      \hline
-      \textbf{Output} & Round length is increased by one and all estimates are locked in \\
-      \hline
-      \textbf{Requirements} & Round exists, manager logged in, at least one estimate is made \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-21: Calculate Round Average}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-21 \\
+            \hline
+            \textbf{Name} & Calculate Round Average \\
+            \hline
+            \textbf{Description} & Process all given estimates and calculate average \\
+            \hline
+            \textbf{Input} & A round is finished \\
+            \hline
+            \textbf{Output} & Average is calculated and stored in database for current round \\
+            \hline
+            \textbf{Requirements} & Round exists, manager logged in, at least one estimate is made \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-22: Clear Round}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-22 \\
-      \hline
-      \textbf{Name} & Clear Round \\
-      \hline
-      \textbf{Description} & Clear current round's estimates \\
-      \hline
-      \textbf{Input} & Manager clicks on clear round \\
-      \hline
-      \textbf{Output} & All of estimates made for this round are deleted \\
-      \hline
-      \textbf{Requirements} & Round exists, manager logged in, at least one estimate is made \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-22: Finalize Manual Estimation}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-22 \\
+            \hline
+            \textbf{Name} & Finalize Manual Estimation \\
+            \hline
+            \textbf{Description} & Multiple rounds are finished and the team has agreed on a final estimate \\
+            \hline
+            \textbf{Input} & Manager clicks on finalize button \\
+            \hline
+            \textbf{Output} & Manual estimation is calculated and stored in database for current round \\
+            \hline
+            \textbf{Requirements} & Al least one round finished, manager logged in \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-23: Calculate Round Average}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-23 \\
-      \hline
-      \textbf{Name} & Calculate Round Average \\
-      \hline
-      \textbf{Description} & Process all given estimates and calculate average \\
-      \hline
-      \textbf{Input} & A round is finished \\
-      \hline
-      \textbf{Output} & Average is calculated and stored in database for current round \\
-      \hline
-      \textbf{Requirements} & Round exists, manager logged in, at least one estimate is made \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-23: All Estimate Bar Chart}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-23 \\
+            \hline
+            \textbf{Name} & All Estimate Bar Chart \\
+            \hline
+            \textbf{Description} & Generate a bar chart comparing all types of estimates \\
+            \hline
+            \textbf{Input} & UCP estimate, manual estimate, ML estimate \\
+            \hline
+            \textbf{Output} & A bar chart is generated \\
+            \hline
+            \textbf{Requirements} & At least one type of estimate calculated \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-24: Finalize Manual Estimation}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-24 \\
-      \hline
-      \textbf{Name} & Finalize Manual Estimation \\
-      \hline
-      \textbf{Description} & Multiple rounds are finished and the team has agreed on a final estimate \\
-      \hline
-      \textbf{Input} & Manager clicks on finalize button \\
-      \hline
-      \textbf{Output} & Manual estimation is calculated and stored in database for current round \\
-      \hline
-      \textbf{Requirements} & Al least one round finished, manager logged in \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-24: All Manual Estimate Rounds' Line Chart}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-24 \\
+            \hline
+            \textbf{Name} & All Manual Estimate Rounds' Line Chart \\
+            \hline
+            \textbf{Description} & A line chart of all rounds' estimates generated overtime \\
+            \hline
+            \textbf{Input} & All rounds' averages \\
+            \hline
+            \textbf{Output} & A line chart is generated \\
+            \hline
+            \textbf{Requirements} & At least one round has been finished \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    \newpage
+    
 
-\subsubsection{FR-25: AllEstimate Bar Chart}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-25 \\
-      \hline
-      \textbf{Name} & All Estimate Bar Chart \\
-      \hline
-      \textbf{Description} & Generate a bar chart comparing all types of estimates \\
-      \hline
-      \textbf{Input} & UCP estimate, manual estimate, ML estimate \\
-      \hline
-      \textbf{Output} & A bar chart is generated \\
-      \hline
-      \textbf{Requirements} & At least one type of estimate calculated \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-25: All Manual Estimate Rounds' Bar Chart}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-25 \\
+            \hline
+            \textbf{Name} & All Manual Estimate Rounds' Bar Chart \\
+            \hline
+            \textbf{Description} & A bar chart with showing the progressing of manual estimation rounds while highlighting each developer's estimate \\
+            \hline
+            \textbf{Input} & round estimates , developers' estimates \\
+            \hline
+            \textbf{Output} & A bar chart is generated \\
+            \hline
+            \textbf{Requirements} & At least one round has been finished \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-26: All Manual Estimate Rounds' Line Chart}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-26 \\
-      \hline
-      \textbf{Name} & All Manual Estimate Rounds' Line Chart \\
-      \hline
-      \textbf{Description} & A line chart of all rounds' estimates generated overtime \\
-      \hline
-      \textbf{Input} & All rounds' averages \\
-      \hline
-      \textbf{Output} & A line chart is generated \\
-      \hline
-      \textbf{Requirements} & At least one round has been finished \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-26: All Machine Learning Estimates Line Chart}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-26 \\
+            \hline
+            \textbf{Name} & All Machine Learning Estimates Line Chart \\
+            \hline
+            \textbf{Description} & Generate a line chart of all machine learning estimates so far \\
+            \hline
+            \textbf{Input} & Machine learning estimates \\
+            \hline
+            \textbf{Output} & A line chart is generated \\
+            \hline
+            \textbf{Requirements} & At least one ML estimate calculated \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-27: All Manual Estimate Rounds' Bar Chart usman ERROR}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-27 \\
-      \hline
-      \textbf{Name} & All Manual Estimate Rounds' Bar Chart \\
-      \hline
-      \textbf{Description} & A bar chart with showing the progressing of manual estimation rounds while highlighting each developer's estimate \\
-      \hline
-      \textbf{Input} & round estimates , developers' estimates \\
-      \hline
-      \textbf{Output} & A bar chart is generated \\
-      \hline
-      \textbf{Requirements} & At least one round has been finished \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-27: Pie Chart of Use Cases Weight}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-27 \\
+            \hline
+            \textbf{Name} & Pie Chart of Use Cases Weight \\
+            \hline
+            \textbf{Description} & A pie chart showcasing the most important use cases \\
+            \hline
+            \textbf{Input} & Use cases \\
+            \hline
+            \textbf{Output} & A pie chart is generated \\
+            \hline
+            \textbf{Requirements} & At least two use cases are entered \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    
+    
 
-\subsubsection{FR-28: All Machine Learning Estimates Line Chart}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-28 \\
-      \hline
-      \textbf{Name} & All Machine Learning Estimates Line Chart \\
-      \hline
-      \textbf{Description} & Generate a line chart of all machine learning estimates so far \\
-      \hline
-      \textbf{Input} & Machine learning estimates \\
-      \hline
-      \textbf{Output} & A line chart is generated \\
-      \hline
-      \textbf{Requirements} & At least one ML estimate calculated \\
-      \hline
-  \end{tabularx}
-\end{center}
-
-\subsubsection{FR-29: Pie Chart of Use Cases Weight}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-29 \\
-      \hline
-      \textbf{Name} & Pie Chart of Use Cases Weight \\
-      \hline
-      \textbf{Description} & A pie chart showcasing the most important use cases \\
-      \hline
-      \textbf{Input} & Use cases \\
-      \hline
-      \textbf{Output} & A pie chart is generated \\
-      \hline
-      \textbf{Requirements} & At least two use cases are entered \\
-      \hline
-  \end{tabularx}
-\end{center}
-
-\subsubsection{FR-30: Template of FR}
-\begin{center}
-  \begin{tabularx}{\textwidth}{|l|X|}
-      \hline
-      \textbf{ID} & FR-30 \\
-      \hline
-      \textbf{Name} &  \\
-      \hline
-      \textbf{Description} &  \\
-      \hline
-      \textbf{Input} &  \\
-      \hline
-      \textbf{Output} &  \\
-      \hline
-      \textbf{Requirements} &  \\
-      \hline
-  \end{tabularx}
-\end{center}
+    \subsubsection{FR-28: }
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & FR-28 \\
+            \hline
+            \textbf{Name} &  \\
+            \hline
+            \textbf{Description} &  \\
+            \hline
+            \textbf{Input} &  \\
+            \hline
+            \textbf{Output} &  \\
+            \hline
+            \textbf{Requirements} &  \\
+            \hline
+        \end{tabularx}
+    \end{center}
+    \newpage
+    
