@@ -1,0 +1,225 @@
+[
+    {
+        "name": "Register",
+        "desc": "Register a new user",
+        "input": "username, password, password_confirmation, email",
+        "output": "A new user is created in the database",
+        "req": "Valid username, valid email, password that contains at least 8 characters, password_confirmation that matches the password"
+    },
+    {
+        "name": "Login",
+        "desc": "Login to the application",
+        "input": "username or email, password",
+        "output": "User is logged in, a JWT token is issued",
+        "req": "Valid username or email, matching password"
+    },
+    {
+        "name": "OAuth",
+        "desc": "Login to the application using OAuth",
+        "input": "OAuth token",
+        "output": "User is logged in, a JWT token is issued",
+        "req": "Valid OAuth token"
+    },
+    {
+        "name": "Forgot password",
+        "desc": "Send an email to the user with a link to reset their password",
+        "input": "email",
+        "output": "An email is sent to the user with a link to reset their password",
+        "req": "Valid email"
+    },
+    {
+        "name": "Reset password",
+        "desc": "Reset the user's password",
+        "input": "token, password, password_confirmation",
+        "output": "The user's password is reset",
+        "req": "Valid token, valid password, password_confirmation that matches the password"
+    },
+    {
+        "name": "Confirm account",
+        "desc": "Confirm the user's account",
+        "input": "token",
+        "output": "The user's account is confirmed",
+        "req": "Valid token"
+
+    },
+    {
+        "name": "Delete account",
+        "desc": "Delete the user's account",
+        "input": "token",
+        "output": "The user's account is deleted",
+        "req": "Valid token"
+
+    },
+    
+    {
+        "name": "Edit account info",
+        "desc": "Edit the user's account info",
+        "input": "token, username, email",
+        "output": "The user's account info is updated",
+        "req": "Valid token, valid username, valid email"
+
+    },
+    {
+        "name": "Edit interface preferences",
+        "desc": "Edit the user's interface preferences",
+        "input": "token, theme, language",
+        "output": "The user's interface preferences are updated",
+        "req": "Valid token, valid theme, valid language"
+
+    },
+    {
+        "name": "Create Project",
+        "desc": "The manager creates a fresh project",
+        "input": "use cases (file/forms), add developers(optional), project name, technology",
+        "output": "A new project is created in the database with the ID of its manager",
+        "req": "Use cases, name, technology name"
+
+    },
+
+    {
+        "name": "Edit Project",
+        "desc": "The manager edits an existing project",
+        "input": "use cases (file/forms), project name, technology, (all optional), project ID(needed)",
+        "output": "The referred project is ",
+        "req": "Use cases, name, technology name, manager logged in, project exists"
+
+    },
+
+    {
+        "name": "Delete Project",
+        "desc": "The manager removes an existing project from database",
+        "input": "Manager clicks on delete project and clicks Yes",
+        "output": "The referred project is removed from database",
+        "req": "Project ID, manager logged in"
+
+    },
+
+    {
+        "name": "Add Developer",
+        "desc": "The manager assigns a developer to the project",
+        "input": "Manager clicks on add new developer and types developer's username",
+        "output": "A new developer is added to projects developer's list",
+        "req": "Project ID, manager logged in, developer username"
+
+    },
+
+
+    {
+        "name": "Remove Developer",
+        "desc": "The manager removes a developer from the project",
+        "input": "Manager goes into developers list and clicks remove button and then clicks Yes",
+        "output": "The developer is removed from the project's developers list",
+        "req": "Project ID, manager logged in, developer username"
+
+    },
+
+    {
+        "name": "Edit Developer Permissions",
+        "desc": "Manager changes a developer's access level to the project",
+        "input": "Manager goes tp developers list and clicks on change role on a developer. They then choose either View or Edit",
+        "output": "Project permissions are edited",
+        "req": "Project ID, Developer ID, Permission type, manager logged in"
+    },
+
+    {
+        "name": "Calculate UCP",
+        "desc": "Get UCP estimation of project using use cases",
+        "input": "Use Cases, environmental factors, technical factors",
+        "output": "An integer representing the UCP estimation in man hours",
+        "req": "manager logged in, use at least 2 cases are entered"
+    },
+
+    {
+        "name": "Get Machine Learning Estimate",
+        "desc": "Calculate estimate using machine learning model",
+        "input": "Use Cases, environmental factors, technical factors",
+        "output": "An integer representing the machine learning estimation in man hours",
+        "req": "manager logged in, use at least 2 cases are entered"
+    },
+    {
+        "name":"Start Manual Estimation Round",
+        "desc":"Create an empty round in current project",
+        "input":"Manager clicks on start manual estimation",
+        "output":"Empty round is created in database for current project",
+        "req":"Manager logged in, project exists, project has at least two use case, at least one developer assigned to project"
+    },
+    {
+        "name":"End Round",
+        "desc":"End current round, locking in all estimates given so far",
+        "input":"Manager clicks end round",
+        "output":"Round length is increased by one and all estimates are locked in",
+        "req":"Round exists, manager logged in, at least one estimate is made"
+    },
+    {
+        "name":"Clear Round",
+        "desc":"Clear current round's estimates",
+        "input":"Manager clicks on clear round",
+        "output":"All of estimates made for this round are deleted",
+        "req":"Round exists, manager logged in, at least one estimate is made"
+    },
+    {
+        "name":"Calculate Round Average",
+        "desc":"Process all given estimates and calculate average",
+        "input":"A round is finished",
+        "output":"Average is calculated and stored in database for current round",
+        "req":"Round exists, manager logged in, at least one estimate is made"
+    },
+    {
+        "name":"Finalize Manual Estimation",
+        "desc":"Multiple rounds are finished and the team has agreed on a final estimate",
+        "input":"Manager clicks on finalize button",
+        "output":"Manual estimation is calculated and stored in database for current round",
+        "req":"Al least one round finished, manager logged in"
+    },
+    {
+        "name":"All Estimate Bar Chart",
+        "desc":"Generate a bar chart comparing all types of estimates",
+        "input":"UCP estimate, manual estimate, ML estimate",
+        "output":"A bar chart is generated",
+        "req":"At least one type of estimate calculated"
+    },
+    {
+        "name":"All Manual Estimate Rounds' Line Chart",
+        "desc":"A line chart of all rounds' estimates generated overtime",
+        "input":"All rounds' averages",
+        "output":"A line chart is generated",
+        "req":"At least one round has been finished"
+    },
+    {
+        "name":"All Manual Estimate Rounds' Bar Chart",
+        "desc":"A bar chart with showing the progressing of manual estimation rounds while highlighting each developer's estimate",
+        "input":"round estimates , developers' estimates",
+        "output":"A bar chart is generated",
+        "req":"At least one round has been finished"
+    },
+    {
+        "name":"All Machine Learning Estimates Line Chart",
+        "desc":"Generate a line chart of all machine learning estimates so far",
+        "input":"Machine learning estimates",
+        "output":"A line chart is generated",
+        "req":"At least one ML estimate calculated"
+    },
+    {
+        "name":"Pie Chart of Use Cases Weight",
+        "desc":"A pie chart showcasing the most important use cases",
+        "input":"Use cases",
+        "output":"A pie chart is generated",
+        "req":"At least two use cases are entered"
+    },
+    {
+        "name":"",
+        "desc":"",
+        "input":"",
+        "output":"",
+        "req":""
+    }
+
+    
+    
+
+    
+
+
+
+    
+]
