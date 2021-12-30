@@ -1,0 +1,256 @@
+[
+    {
+        "name": "Register",
+        "desc": "",
+        "actors": "",
+        "assumptions": "",
+        "triggers": "",
+        "pre": "",
+        "post": "",
+        "mainCourse": "",
+        "alternativeCourse": ""
+    },
+{
+        "name": "Register",
+        "desc": "User can register their to keep their role in that software",
+        "actors": "New User",
+        "assumptions": "If user can Register, he/she will see more features",
+        "triggers": "Just Connect to in the internet and a email address",
+        "pre": "None",
+        "post": "Account Created Succesfully",
+        "mainCourse": "1. Enter their Details 2.Create their accound according to their given details",
+        "alternativeCourse": "Error due to invalid details"
+    },
+
+
+    {
+        "name": "Login",
+        "desc": "Login to the system to view/change in their account",
+        "actors": "New User",
+        "assumptions": "If user can login, he/she will use more features",
+        "triggers": "just confirm with email which they provided in sign up",
+        "pre": "they must have a account",
+        "post": "they succesfully see the dashboard and more settings and features",
+        "mainCourse": "User can enter/use their email and its valid password Check entered data and able to use",
+        "alternativeCourse": "Error due to invalid details"
+    },
+
+    {
+        "name": "OAuth",
+        "desc": "User can ouath their details with third party like Gmail , LinkdIn and Github",
+        "actors": "New User",
+        "assumptions": "User can connect their third party account to login with the software",
+        "triggers": "just have a third party account ",
+        "pre": "none",
+        "post": "account has created by confiramtion through email ",
+        "mainCourse": "User can create their account on system by sending a email confirmation token.",
+        "alternativeCourse": "Error will show if you cant verify your Thir party account"
+    },
+
+
+    {
+        "name": "Forget Password",
+        "desc": "Send the email to the user with a link to reset their password",
+        "actors": "Account Holder",
+        "assumptions": "An email is sent tu the user with a link to reset their password",
+        "triggers": "",
+        "pre": "Valid Email",
+        "post": "New password has been changed",
+        "mainCourse": "User can change their password by sending link to their email and setting the new password with the password requirements",
+        "alternativeCourse": "Error will be show due to invalid details"
+    },
+
+
+    {
+        "name": "Reset Password",
+        "desc": "User can reset your Password by entering you current password",
+        "actors": "Account Holder",
+        "assumptions": "To reset their password, User can enter the curent password and after confirmation it will be default password ",
+        "triggers": "Account Holder",
+        "pre": "user have a account",
+        "post": "password has been reset",
+        "mainCourse": "User can reset their password by entering their current password and password will set to default Password",
+        "alternativeCourse": "Error will be show due to invalid details"
+    },
+
+
+    {
+        "name": "Confirm Account",
+        "desc": "User can confirm their account by a valid email address",
+        "actors": "New User",
+        "assumptions": "",
+        "triggers": "By send the valid link to user's provided email",
+        "pre": "Fill the signup form",
+        "post": "account verified",
+        "mainCourse": "Account has been created though 3rd Party validation",
+        "alternativeCourse": "Error by unvalid email provided"
+    },
+
+
+    {
+        "name": "Delete Account",
+        "desc": "User can delete the account if he/she can",
+        "actors": "Already User",
+        "assumptions": "",
+        "triggers": "remove the user_id from database by click on reset button",
+        "pre": "Already user database was be present in database",
+        "post": "No user of that user_id will not be in database",
+        "mainCourse": "Account has been removed from database by the confirmation of user",
+        "alternativeCourse": "Error will be appeared by database"
+    },
+
+
+    {
+        "name": "Edit Account Info",
+        "desc": "User can edit their account information",
+        "actors": "Already User",
+        "assumptions": "",
+        "triggers": "Database of that user can be updated",
+        "pre": "Already data of that user will be in database ",
+        "post": "Update the new version of their information in database",
+        "mainCourse": "Information of the User can be updated if he/she can",
+        "alternativeCourse": "Error willbe displaced by the Database"
+    },
+
+
+    {
+        "name": "Edit Interface Preferences",
+        "desc": "User can edit their preferences of the UI of their dashboard",
+        "actors": "User",
+        "assumptions": "",
+        "triggers": "User can change the primary and secondary Colors of the themes",
+        "pre": "Valid User",
+        "post": "UI preferences will be change according to User",
+        "mainCourse": "Interface preference will be changed by the user according to their preception ",
+        "alternativeCourse": "Error will be displayed it choose certain colors like black etc."
+    },
+
+
+    {
+        "name": "Create Project",
+        "desc": "Manager can create a project which is stored in the database with the unique id",
+        "actors": "Manager",
+        "assumptions": "",
+        "triggers": "The Project will created in the database with unique id",
+        "pre": "user will be valid and Project can't created before ",
+        "post": "Project is created by the Manager",
+        "mainCourse": "Project is created by the manager in database",
+        "alternativeCourse": "Error will be displayed of database "
+    },
+
+
+    {
+        "name": "Edit Project",
+        "desc": "The existing project will be edited by the manager if needed ",
+        "actors": "Manager",
+        "assumptions": "",
+        "triggers": "The Information of the existing project will be updated in the database",
+        "pre": "Project is present already in database",
+        "post": "Project's Information will be updated by manager",
+        "mainCourse": "Manager can change the existing project if the requirements will be changed by the client",
+        "alternativeCourse": "Database's error will occurs"
+    },
+
+
+    {
+        "name": "Delete Project",
+        "desc": "The Manager will delete the existing projects from the database",
+        "actors": "Managers",
+        "assumptions": "",
+        "triggers": "Delete the existing project from the database by delete event",
+        "pre": "Project will be in the database which Manager will be deleted",
+        "post": "Project is deletedby the the manager",
+        "mainCourse": "The manager will delete the exiting project which is presnet in database",
+        "alternativeCourse": "Error will be displayed"
+    },
+
+
+    {
+        "name": "Add Developer",
+        "desc": "The Manager will assign the developer of the company which is part of that Project",
+        "actors": "Managers",
+        "assumptions": "",
+        "triggers": "Developer list will be shown to manager and manager will add the relevant developer",
+        "pre": "Developer and project will be added",
+        "post": "Developer will be added in the specific project",
+        "mainCourse": "To view the new upcoming project and take the decision of developer in project, Manager will added the developer in the project",
+        "alternativeCourse": "Error will be displayed"
+    },
+
+
+    {
+        "name": "Remove Developer",
+        "desc": "The manager can remove the developer after developer performs their duties",
+        "actors": "Manager",
+        "assumptions": "",
+        "triggers": "Manager will remove the developer in the project anytime.",
+        "pre": "Developer will be added in that project",
+        "post": "developer is no more the part of the project",
+        "mainCourse": "Manager can manage the availabilty of the developer whenever he enter in the project or when he exits.",
+        "alternativeCourse": "Error will be displayed"
+    },
+
+
+    {
+        "name": "Edit Developer Permission",
+        "desc": "The Manager can edit the role of the developer in the project",
+        "actors": "Managers",
+        "assumptions": "",
+        "triggers": "Manager can edit the preference of the developer",
+        "pre": "Developer must have the part of the project",
+        "post": "Developer's Role will changed by the manager",
+        "mainCourse": "The Developer can change the role of the developer as he needs him in the project",
+        "alternativeCourse": "Error will be dislpayed by the database"
+    },
+
+
+    {
+        "name": "Calculate UCP",
+        "desc": "Calculate the effort estimation of project via mean of UCP method",
+        "actors": "Manager , Developers",
+        "assumptions": "",
+        "triggers": "The effort will calculted by UCP formula",
+        "pre": "The Project Use cases' information are inserted already",
+        "post": "Calculated Effort are given by UCP method ",
+        "mainCourse": "To find the Effort Estimation by UCP method of the entire project by the help of their use cases",
+        "alternativeCourse": "Error will displayed"
+    },
+
+
+    {
+        "name": "Get Machine Learning Estimation",
+        "desc": "Calculate the effort estimation of project via trained Machine Learning module",
+        "actors": "Manager ",
+        "assumptions": "",
+        "triggers": "The effort will calculted by UCP formula",
+        "pre": "The Project Use cases' information are inserted already",
+        "post": "Calculated Effort are given by UCP method ",
+        "mainCourse": "To find the Effort Estimation by UCP method of the entire project by the help of their use cases",
+        "alternativeCourse": "Error will displayed"
+    },
+
+
+    {
+        "name": "Manual Estimate Round",
+        "desc": "Calculate the effort estimation of project via Manual Estimation where the developer and experts will estimate the project while round",
+        "actors": "developers, manager",
+        "assumptions": "",
+        "triggers": "The Effort will calculated by Manual technique",
+        "pre": "Developers were added by manager  in the project",
+        "post": "The effort will calculated after the many rounds of the experts' discussions ",
+        "mainCourse": "To find the Effort estimation by Manual technique by many rounds",
+        "alternativeCourse": "Error will displayed"
+    },
+
+    {
+        "name": "Estimation Bar",
+        "desc": "All Estimation will be shown in the form of graphs",
+        "actors": "Manager , Developer",
+        "assumptions": "",
+        "triggers": "The Estimate will be generated by the experts' round discussion",
+        "pre": "The estimation will be measured before that step ",
+        "post": "The charts will be appeared",
+        "mainCourse": "Estimation will be deliver in bar that anyone will be see and clearly judge the estimation of the project",
+        "alternativeCourse": "Error wil be displayed"
+    }
+]
