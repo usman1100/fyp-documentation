@@ -18,15 +18,13 @@
             \hline
             \textbf{Actors} & New User \\
             \hline
-            \textbf{Assumptions} & If user can Register, he/she will see more features \\
-            \hline
             \textbf{Triggers} & Just Connect to in the internet and a email address \\
             \hline
             \textbf{Pre Conditions} & None \\
             \hline
             \textbf{Post Conditions} & Account Created Succesfully \\
             \hline
-            \textbf{Main Course} & 1. Enter their Details 2.Create their accound according to their given details \\
+            \textbf{Main Course} & 1. Enter their Details \\2.Create their accound according to their given details \\
             \hline
             \textbf{Alternative Course} & Error due to invalid details \\
             \hline
@@ -56,15 +54,13 @@
             \hline
             \textbf{Actors} & New User \\
             \hline
-            \textbf{Assumptions} & If user can login, he/she will use more features \\
-            \hline
             \textbf{Triggers} & just confirm with email which they provided in sign up \\
             \hline
             \textbf{Pre Conditions} & they must have a account \\
             \hline
             \textbf{Post Conditions} & they succesfully see the dashboard and more settings and features \\
             \hline
-            \textbf{Main Course} & User can enter/use their email and its valid password Check entered data and able to use \\
+            \textbf{Main Course} & User can enter/use their email and its valid password \\
             \hline
             \textbf{Alternative Course} & Error due to invalid details \\
             \hline
@@ -93,17 +89,15 @@
             \hline
             \textbf{Actors} & New User \\
             \hline
-            \textbf{Assumptions} & User can connect their third party account to login with the software \\
+            \textbf{Triggers} & Just have a third party account  \\
             \hline
-            \textbf{Triggers} & just have a third party account  \\
+            \textbf{Pre Conditions} & None \\
             \hline
-            \textbf{Pre Conditions} & none \\
-            \hline
-            \textbf{Post Conditions} & account has created by confiramtion through email  \\
+            \textbf{Post Conditions} & Account has created by confiramtion through email  \\
             \hline
             \textbf{Main Course} & User can create their account on system by sending a email confirmation token. \\
             \hline
-            \textbf{Alternative Course} & Error will show if you cant verify your Thir party account \\
+            \textbf{Alternative Course} & Error will show if you cant verify your third party account \\
             \hline
             
         \end{tabularx}
@@ -122,7 +116,7 @@
     \begin{center}
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
-            \textbf{ID} & UC-05 \\
+            \textbf{ID} & UC-04 \\
             \hline
             \textbf{Name} & Forget Password \\
             \hline
@@ -130,9 +124,7 @@
             \hline
             \textbf{Actors} & Account Holder \\
             \hline
-            \textbf{Assumptions} & An email is sent tu the user with a link to reset their password \\
-            \hline
-            \textbf{Triggers} &  \\
+           \textbf{Triggers} & Send a link to the provided email for verfication purposes \\
             \hline
             \textbf{Pre Conditions} & Valid Email \\
             \hline
@@ -159,7 +151,7 @@
     \begin{center}
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
-            \textbf{ID} & UC-06 \\
+            \textbf{ID} & UC-05 \\
             \hline
             \textbf{Name} & Reset Password \\
             \hline
@@ -167,9 +159,7 @@
             \hline
             \textbf{Actors} & Account Holder \\
             \hline
-            \textbf{Assumptions} & To reset their password, User can enter the curent password and after confirmation it will be default password  \\
-            \hline
-            \textbf{Triggers} & Account Holder \\
+            \textbf{Triggers} & Link will send to the email for verification after that the password will be defaulted password \\
             \hline
             \textbf{Pre Conditions} & user have a account \\
             \hline
@@ -196,15 +186,13 @@
     \begin{center}
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
-            \textbf{ID} & UC-07 \\
+            \textbf{ID} & UC-06 \\
             \hline
             \textbf{Name} & Confirm Account \\
             \hline
             \textbf{Description} & User can confirm their account by a valid email address \\
             \hline
             \textbf{Actors} & New User \\
-            \hline
-            \textbf{Assumptions} &  \\
             \hline
             \textbf{Triggers} & By send the valid link to user's provided email \\
             \hline
@@ -241,15 +229,13 @@
             \hline
             \textbf{Actors} & Already User \\
             \hline
-            \textbf{Assumptions} &  \\
-            \hline
-            \textbf{Triggers} & remove the user\_id Use Caseom database by click on reset button \\
+            \textbf{Triggers} & remove the user\_id from database by click on reset button \\
             \hline
             \textbf{Pre Conditions} & Already user database was be present in database \\
             \hline
             \textbf{Post Conditions} & No user of that user\_id will not be in database \\
             \hline
-            \textbf{Main Course} & Account has been removed Use Caseom database by the confirmation of user \\
+            \textbf{Main Course} & Account has been removed from database by the confirmation of user \\
             \hline
             \textbf{Alternative Course} & Error will be appeared by database \\
             \hline
@@ -270,15 +256,13 @@
     \begin{center}
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
-            \textbf{ID} & UC-09 \\
+            \textbf{ID} & UC-08 \\
             \hline
             \textbf{Name} & Edit Account Info \\
             \hline
             \textbf{Description} & User can edit their account information \\
             \hline
             \textbf{Actors} & Already User \\
-            \hline
-            \textbf{Assumptions} &  \\
             \hline
             \textbf{Triggers} & Database of that user can be updated \\
             \hline
@@ -307,15 +291,13 @@
     \begin{center}
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
-            \textbf{ID} & UC-10 \\
+            \textbf{ID} & UC-09 \\
             \hline
             \textbf{Name} & Edit Interface Preferences \\
             \hline
             \textbf{Description} & User can edit their preferences of the UI of their dashboard \\
             \hline
             \textbf{Actors} & User \\
-            \hline
-            \textbf{Assumptions} &  \\
             \hline
             \textbf{Triggers} & User can change the primary and secondary Colors of the themes \\
             \hline
@@ -344,15 +326,13 @@
     \begin{center}
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
-            \textbf{ID} & UC-11 \\
+            \textbf{ID} & UC-10 \\
             \hline
             \textbf{Name} & Create Project \\
             \hline
             \textbf{Description} & Manager can create a project which is stored in the database with the unique id \\
             \hline
             \textbf{Actors} & Manager \\
-            \hline
-            \textbf{Assumptions} &  \\
             \hline
             \textbf{Triggers} & The Project will created in the database with unique id \\
             \hline
@@ -381,7 +361,7 @@
     \begin{center}
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
-            \textbf{ID} & UC-12 \\
+            \textbf{ID} & UC-11 \\
             \hline
             \textbf{Name} & Edit Project \\
             \hline
@@ -389,9 +369,7 @@
             \hline
             \textbf{Actors} & Manager \\
             \hline
-            \textbf{Assumptions} &  \\
-            \hline
-            \textbf{Triggers} & The Information of the existing project will be updated in the database \\
+           \textbf{Triggers} & The Information of the existing project will be updated in the database \\
             \hline
             \textbf{Pre Conditions} & Project is present already in database \\
             \hline
@@ -418,15 +396,13 @@
     \begin{center}
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
-            \textbf{ID} & UC-13 \\
+            \textbf{ID} & UC-12 \\
             \hline
             \textbf{Name} & Delete Project \\
             \hline
             \textbf{Description} & The Manager will delete the existing projects Use Caseom the database \\
             \hline
             \textbf{Actors} & Managers \\
-            \hline
-            \textbf{Assumptions} &  \\
             \hline
             \textbf{Triggers} & Delete the existing project Use Caseom the database by delete event \\
             \hline
@@ -455,15 +431,13 @@
     \begin{center}
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
-            \textbf{ID} & UC-14 \\
+            \textbf{ID} & UC-13 \\
             \hline
             \textbf{Name} & Add Developer \\
             \hline
             \textbf{Description} & The Manager will assign the developer of the company which is part of that Project \\
             \hline
             \textbf{Actors} & Managers \\
-            \hline
-            \textbf{Assumptions} &  \\
             \hline
             \textbf{Triggers} & Developer list will be shown to manager and manager will add the relevant developer \\
             \hline
@@ -492,7 +466,7 @@
     \begin{center}
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
-            \textbf{ID} & UC-15 \\
+            \textbf{ID} & UC-14 \\
             \hline
             \textbf{Name} & Remove Developer \\
             \hline
@@ -500,9 +474,7 @@
             \hline
             \textbf{Actors} & Manager \\
             \hline
-            \textbf{Assumptions} &  \\
-            \hline
-            \textbf{Triggers} & Manager will remove the developer in the project anytime. \\
+           \textbf{Triggers} & Manager will remove the developer in the project anytime. \\
             \hline
             \textbf{Pre Conditions} & Developer will be added in that project \\
             \hline
@@ -529,15 +501,13 @@
     \begin{center}
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
-            \textbf{ID} & UC-16 \\
+            \textbf{ID} & UC-15 \\
             \hline
             \textbf{Name} & Edit Developer Permission \\
             \hline
             \textbf{Description} & The Manager can edit the role of the developer in the project \\
             \hline
             \textbf{Actors} & Managers \\
-            \hline
-            \textbf{Assumptions} &  \\
             \hline
             \textbf{Triggers} & Manager can edit the preference of the developer \\
             \hline
@@ -566,15 +536,13 @@
     \begin{center}
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
-            \textbf{ID} & UC-17 \\
+            \textbf{ID} & UC-16 \\
             \hline
             \textbf{Name} & Calculate UCP \\
             \hline
             \textbf{Description} & Calculate the effort estimation of project via mean of UCP method \\
             \hline
             \textbf{Actors} & Manager , Developers \\
-            \hline
-            \textbf{Assumptions} &  \\
             \hline
             \textbf{Triggers} & The effort will calculted by UCP formula \\
             \hline
@@ -603,15 +571,13 @@
     \begin{center}
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
-            \textbf{ID} & UC-18 \\
+            \textbf{ID} & UC-17 \\
             \hline
             \textbf{Name} & Get Machine Learning Estimation \\
             \hline
             \textbf{Description} & Calculate the effort estimation of project via trained Machine Learning module \\
             \hline
             \textbf{Actors} & Manager  \\
-            \hline
-            \textbf{Assumptions} &  \\
             \hline
             \textbf{Triggers} & The effort will calculted by UCP formula \\
             \hline
@@ -640,15 +606,13 @@
     \begin{center}
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
-            \textbf{ID} & UC-19 \\
+            \textbf{ID} & UC-18 \\
             \hline
             \textbf{Name} & Manual Estimate Round \\
             \hline
             \textbf{Description} & Calculate the effort estimation of project via Manual Estimation where the developer and experts will estimate the project while round \\
             \hline
             \textbf{Actors} & developers, manager \\
-            \hline
-            \textbf{Assumptions} &  \\
             \hline
             \textbf{Triggers} & The Effort will calculated by Manual technique \\
             \hline
@@ -677,15 +641,13 @@
     \begin{center}
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
-            \textbf{ID} & UC-20 \\
+            \textbf{ID} & UC-19 \\
             \hline
             \textbf{Name} & Estimation Bar \\
             \hline
             \textbf{Description} & All Estimation will be shown in the form of graphs \\
             \hline
             \textbf{Actors} & Manager , Developer \\
-            \hline
-            \textbf{Assumptions} &  \\
             \hline
             \textbf{Triggers} & The Estimate will be generated by the experts' round discussion \\
             \hline
