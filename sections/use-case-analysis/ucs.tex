@@ -155,17 +155,17 @@
             \hline
             \textbf{Name} & Reset Password \\
             \hline
-            \textbf{Description} & User can reset your Password by entering you current password \\
+            \textbf{Description} & User can reset/change your password by entering you current password \\
             \hline
             \textbf{Actors} & Account Holder \\
             \hline
-            \textbf{Triggers} & Link will send to the email for verification after that the password will be defaulted password \\
+            \textbf{Triggers} & You can reset/change the password before entering current password and the activity will be send on provided email\\
             \hline
-            \textbf{Pre Conditions} & user have a account \\
+            \textbf{Pre Conditions} & User have a account \\
             \hline
-            \textbf{Post Conditions} & password has been reset \\
+            \textbf{Post Conditions} & Password has been reset/change \\
             \hline
-            \textbf{Main Course} & User can reset their password by entering their current password and password will set to default Password \\
+            \textbf{Main Course} & User can reset their password by entering their current password and password will set to new updated password \\
             \hline
             \textbf{Alternative Course} & Error will be show due to invalid details \\
             \hline
@@ -663,6 +663,43 @@
         \end{tabularx}
     \end{center}
     \newpage
+
+    \subsubsection{UC-20: Logout}
+    \begin{figure}[H]
+        \includegraphics[height=5cm, width=0.8\textwidth]{./diagrams/Use Case/logout.png}
+        \centering 
+        \caption{Use Case Diagram for logout}
+        \label{Usecase1}
+        \end{figure}
+        
+    
+    \begin{center}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{ID} & UC-20 \\
+            \hline
+            \textbf{Name} & Logout \\
+            \hline
+            \textbf{Description} & For ending their session with the system \\
+            \hline
+            \textbf{Actors} & Already User \\
+            \hline
+            \textbf{Triggers} & Must be login and the pop up window is appeared for the confirmation. \\
+            \hline
+            \textbf{Pre Conditions} & They must have a account \\
+            \hline
+            \textbf{Post Conditions} & System display the main page  \\
+            \hline
+            \textbf{Main Course} & System logged out and show a pop up again with the message of "Sucessfully logged out" \\
+            \hline
+            \textbf{Alternative Course} & Error due to invalid details \\
+            \hline
+            
+        \end{tabularx}
+    \end{center}
+    \newpage
+    
+
     
 
   
