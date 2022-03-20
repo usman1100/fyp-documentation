@@ -1,1 +1,116 @@
 \subsection{Languages}
+
+
+Almost every component of our system is written in JavaScript. We utilise it for the front end and the REST API on the back end. However, because JavaScript is a browser-based programming language, it cannot be used on the backend or server side of a system. This is where NodeJS enters the picture.
+
+\hspace{5mm}
+
+NodeJS is a JavaScript runtime that lets us run JavaScript on the server side. NodeJS was created in 2009 and has grown in popularity ever since. It offers unending community support, community-built packages, frameworks backed by tech giants such as Facebook and Google, top-of-the-line tooling, and a massive ecosystem of open source projects.
+
+\hspace{5mm}
+
+
+NodeJS is a dynamically typed language, which means it isn't type verified during compilation. This means substantially faster development periods, but it also means that production will be riddled with bugs. This dynamic typing behaviour also adds to the project's volatility. This was a big issue that needed to be addressed.
+
+\hspace{5mm}
+
+
+Introducing TypeScript. On top of conventional NodeJS and JavaScript programming, TypeScript adds a layer of extra safety nets. It's a JavaScript superset that's been compiled to JavaScript. MicroSoft created it for internal use before releasing it as open source later. It incorporates principles such as type safety, null checking, and improved error handling to prevent many bugs from being discovered during runtime and in production.
+
+
+\subsubsection{Frameworks}
+
+We employ a well orchestrated set of frameworks to avoid having to design every single component of the system from scratch. These frameworks differ in their nature, design, and functions, yet they all work well together to produce a unified system that is simple to comprehend and manage.
+
+
+\hspace{5mm}
+
+
+\textbf{ReactJS}
+
+
+ReactJS is a framework developed and operated by Facebook, and it is perhaps the most popular and talked-about framework today. React was first launched as an open source project in May of 2013, and it has been steadily climbing the popularity and satisfaction statistics ever since.
+
+
+ReactJS automates the process of manually updating and setting the values of DOM components using things like Pure JavaScript or JQuery by introducing an imperitive method in which we may keep track of "state" within our application and the UI redraws automatically when the state is updated.
+
+
+ReactJS further raises the bar on modularity and reusability by allowing us to design self-contained bespoke components. These components are self-contained, with their own markup, styling, functionality, and state. They can be used as many times as needed in the application.
+
+
+\hspace{5mm}
+
+
+\textbf{NestJS}
+
+
+NestJS is a Node.js framework for developing server-side applications that are efficient, dependable, and scalable. Because of its modular nature, it gives you full versatility by allowing you to use any other library. An extensible environment that serves as the foundation for a wide range of server-side applications. Uses the latest JavaScript features to bring design patterns and mature solutions to the world of Node.js.
+
+\newpage
+\subsubsection{Libraries}
+
+The system utilizes a whole orchestra of tility libraries that make the development experience goes much smoother. These libraries are all open source and are written in JavaScript. Some of the categories of libraries are: Frontend visual component llibraries, validation libraries used to verify and sanitize incoming and outgoing data, ORMs, used to provide an abstraction layer over the database, hashing and encrpyting libraries for cutting edge security and many more utility libraries for ease of development.
+
+\hspace{5mm}
+
+
+\textbf{Vite}
+
+
+Vite is a TypeScript / JavaScript transpiler and code bundler. The job of the build system is to produce a production build that consists of a single JavaScript file and a single CSS file. Vite also allows you to write code in TypeScript and then transpile it to JavaScript.
+
+
+We have chosen Vite over Create React App due to it's superior speed and developer tooling support. A vite build will take approximately 1/3 the time of a CRA build. And the bundle size that is produced will also be significantly smaller.
+
+
+\hspace{5mm}
+
+
+\textbf{Tailwind CSS}
+
+
+Tailwind CSS is a utility-first CSS framework that allows you to quickly create bespoke, high-performance, and accessible websites and apps. It's designed to be used as a standalone project or as a dependent in larger projects, and it's created with modularity and performance in mind.
+
+Tailwind also uses a process called Tree Shaking to reduce the size of the system's production builds. It signifies that the CSS pre-processor will check the code and eliminate any unneeded CSS classes when it is built. This is an excellent approach to lower the size of the CSS file while also improving the system's performance.
+
+\hspace{5mm}
+
+
+
+\textbf{Daisy UI}
+
+On top of Tailind CSS as an component layer is Dasiy UI. It is a library of pre built easy to use components that utilize Tailind CSS to create a consistent look and feel.
+
+
+\hspace{5mm}
+
+
+\textbf{Redux / Redux Toolkit}
+
+The concept of state management is a hot topic in the ReactJS community. It's a highly subjective approach to how one manages the state of their application. There are some pre-built solutions available, such Redux.
+
+Redux is a library that manages the state of an application using the concept of a store. The store is the application's heart and soul, and it's where the application's state is kept. The Reducer pattern is used to construct it. The reducer is a function that is used to keep the application's state up to date. The reducer receives all actions, such as adding a new item to the list or removing an item from the list. The
+
+This approach introduces some boilerplates code into the codebase but in the long run provides a stable and predictable state management solution.
+
+
+\hspace{5mm}
+
+
+\textbf{Formik}
+
+For building easy to use, debug and reuse forms in ReactJS.
+
+
+\hspace{5mm}
+
+
+\textbf{Yup}
+
+For validating and sanitizing data received and sent to and from the frontend.
+
+
+\hspace{5mm}
+
+
+\newpage
