@@ -1,0 +1,156 @@
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{|l|llll|}
+        \hline
+
+        Description   & \multicolumn{4}{l|}{The User will log in to the application}                                                      \\ \hline
+        Use Case ID   & \multicolumn{4}{l|}{UC01}                                                                                         \\ \hline
+        Test Case ID  & \multicolumn{4}{l|}{TC01}                                                                                         \\ \hline
+        Actors        & \multicolumn{4}{l|}{User}                                                                                         \\ \hline
+        Main Scenario & \multicolumn{1}{l|}{Serial No}                               & \multicolumn{3}{l|}{Steps}                         \\ \hline
+        Actor/User    & \multicolumn{1}{l|}{1}                                       & \multicolumn{3}{l|}{U: Enter their credentials}    \\ \hline
+                      & \multicolumn{1}{l|}{2}                                       & \multicolumn{3}{l|}{U: Send credentials to system} \\ \hline
+                      & \multicolumn{1}{l|}{3}                                       & \multicolumn{3}{l|}{S: Authorize the user}         \\ \hline
+        Extension     & \multicolumn{1}{l|}{1}                                       & \multicolumn{3}{l|}{Invalid Credentials}           \\ \hline
+                      & \multicolumn{1}{l|}{2}                                       & \multicolumn{3}{l|}{Non existant primary key}      \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{|l|llll|}
+        \hline
+        Description   & \multicolumn{4}{l|}{The User will register to the application}                                                                                         \\ \hline
+        Use Case ID   & \multicolumn{4}{l|}{UC01}                                                                                                                              \\ \hline
+        Test Case ID  & \multicolumn{4}{l|}{TC01}                                                                                                                              \\ \hline
+        Actors        & \multicolumn{4}{l|}{User}                                                                                                                              \\ \hline
+        Main Scenario & \multicolumn{1}{l|}{Serial No}                                 & \multicolumn{3}{l|}{Steps}                                                            \\ \hline
+        Actor/User    & \multicolumn{1}{l|}{1}                                         & \multicolumn{3}{l|}{U: Enter their information}                                       \\ \hline
+                      & \multicolumn{1}{l|}{2}                                         & \multicolumn{3}{l|}{U: Send information to system}                                    \\ \hline
+                      & \multicolumn{1}{l|}{3}                                         & \multicolumn{3}{l|}{S: Authorize all the users information and check for duplication} \\ \hline
+        Extension     & \multicolumn{1}{l|}{1}                                         & \multicolumn{3}{l|}{Faulty information}                                               \\ \hline
+                      & \multicolumn{1}{l|}{2}                                         & \multicolumn{3}{l|}{Previously existing data}                                         \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{|l|llll|}
+        \hline
+        Description   & \multicolumn{4}{l|}{The User recover their password}                                                               \\ \hline
+        Use Case ID   & \multicolumn{4}{l|}{UC01}                                                                                          \\ \hline
+        Test Case ID  & \multicolumn{4}{l|}{TC01}                                                                                          \\ \hline
+        Actors        & \multicolumn{4}{l|}{User}                                                                                          \\ \hline
+        Main Scenario & \multicolumn{1}{l|}{Serial No}                       & \multicolumn{3}{l|}{Steps}                                  \\ \hline
+        Actor/User    & \multicolumn{1}{l|}{1}                               & \multicolumn{3}{l|}{U: Enter their email}                   \\ \hline
+                      & \multicolumn{1}{l|}{2}                               & \multicolumn{3}{l|}{U: Send email to system}                \\ \hline
+                      & \multicolumn{1}{l|}{3}                               & \multicolumn{3}{l|}{S: Check for email in database records} \\ \hline
+        Extension     & \multicolumn{1}{l|}{1}                               & \multicolumn{3}{l|}{Invalid email format}                   \\ \hline
+                      & \multicolumn{1}{l|}{2}                               & \multicolumn{3}{l|}{Non existant email}                     \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{|l|llll|}
+        \hline
+        Description   & \multicolumn{4}{l|}{The User changes their password}                                                            \\ \hline
+        Use Case ID   & \multicolumn{4}{l|}{UC08}                                                                                       \\ \hline
+        Test Case ID  & \multicolumn{4}{l|}{TC08}                                                                                       \\ \hline
+        Actors        & \multicolumn{4}{l|}{User}                                                                                       \\ \hline
+        Main Scenario & \multicolumn{1}{l|}{Serial No}                       & \multicolumn{3}{l|}{Steps}                               \\ \hline
+        Actor/User    & \multicolumn{1}{l|}{1}                               & \multicolumn{3}{l|}{U: Enter new password}               \\ \hline
+                      & \multicolumn{1}{l|}{2}                               & \multicolumn{3}{l|}{U: Enter new password}               \\ \hline
+                      & \multicolumn{1}{l|}{3}                               & \multicolumn{3}{l|}{S: Validate and update new password} \\ \hline
+        Extension     & \multicolumn{1}{l|}{1}                               & \multicolumn{3}{l|}{Weak passowrd}                       \\ \hline
+                      & \multicolumn{1}{l|}{2}                               & \multicolumn{3}{l|}{New and old passwords are same}      \\ \hline
+    \end{tabular}
+\end{table}
+\newpage
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{|l|llll|}
+        \hline
+        Description   & \multicolumn{4}{l|}{The User updates their email}                                                               \\ \hline
+        Use Case ID   & \multicolumn{4}{l|}{UC08}                                                                                       \\ \hline
+        Test Case ID  & \multicolumn{4}{l|}{TC08}                                                                                       \\ \hline
+        Actors        & \multicolumn{4}{l|}{User}                                                                                       \\ \hline
+        Main Scenario & \multicolumn{1}{l|}{Serial No}                    & \multicolumn{3}{l|}{Steps}                                  \\ \hline
+        Actor/User    & \multicolumn{1}{l|}{1}                            & \multicolumn{3}{l|}{U: Enter new email}                     \\ \hline
+                      & \multicolumn{1}{l|}{2}                            & \multicolumn{3}{l|}{U: Send email to system}                \\ \hline
+                      & \multicolumn{1}{l|}{3}                            & \multicolumn{3}{l|}{S: Check for email in database records} \\ \hline
+        Extension     & \multicolumn{1}{l|}{1}                            & \multicolumn{3}{l|}{Invalid email format}                   \\ \hline
+                      & \multicolumn{1}{l|}{2}                            & \multicolumn{3}{l|}{Non existant email}                     \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{|l|llll|}
+        \hline
+        Description   & \multicolumn{4}{l|}{The Owner creates new organization}                                                                \\ \hline
+        Use Case ID   & \multicolumn{4}{l|}{UC11}                                                                                              \\ \hline
+        Test Case ID  & \multicolumn{4}{l|}{TC11}                                                                                              \\ \hline
+        Actors        & \multicolumn{4}{l|}{Owner}                                                                                             \\ \hline
+        Main Scenario & \multicolumn{1}{l|}{Serial No}                          & \multicolumn{3}{l|}{Steps}                                   \\ \hline
+        Actor/User    & \multicolumn{1}{l|}{1}                                  & \multicolumn{3}{l|}{U: Enter organization name}              \\ \hline
+                      & \multicolumn{1}{l|}{2}                                  & \multicolumn{3}{l|}{U: Enter organization motto}             \\ \hline
+                      & \multicolumn{1}{l|}{3}                                  & \multicolumn{3}{l|}{S: Creates new organization in database} \\ \hline
+        Extension     & \multicolumn{1}{l|}{1}                                  & \multicolumn{3}{l|}{Invalid name or motto provided}          \\ \hline
+                      & \multicolumn{1}{l|}{2}                                  & \multicolumn{3}{l|}{Organization already exists}             \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{|l|llll|}
+        \hline
+        Description   & \multicolumn{4}{l|}{The Owner adds new member to organization}                                                                \\ \hline
+        Use Case ID   & \multicolumn{4}{l|}{UC13}                                                                                                     \\ \hline
+        Test Case ID  & \multicolumn{4}{l|}{TC13}                                                                                                     \\ \hline
+        Actors        & \multicolumn{4}{l|}{Owner}                                                                                                    \\ \hline
+        Main Scenario & \multicolumn{1}{l|}{Serial No}                                 & \multicolumn{3}{l|}{Steps}                                   \\ \hline
+        Actor/User    & \multicolumn{1}{l|}{1}                                         & \multicolumn{3}{l|}{U: Search with employee email}           \\ \hline
+                      & \multicolumn{1}{l|}{2}                                         & \multicolumn{3}{l|}{U: Click on add button}                  \\ \hline
+                      & \multicolumn{1}{l|}{3}                                         & \multicolumn{3}{l|}{S: Adds employee to organization}        \\ \hline
+        Extension     & \multicolumn{1}{l|}{1}                                         & \multicolumn{3}{l|}{Employee email not found}                \\ \hline
+                      & \multicolumn{1}{l|}{2}                                         & \multicolumn{3}{l|}{Employee is alredy part of organization} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{|l|llll|}
+        \hline
+        Description   & \multicolumn{4}{l|}{The Owner adds new member to organization}                                                                \\ \hline
+        Use Case ID   & \multicolumn{4}{l|}{UC13}                                                                                                     \\ \hline
+        Test Case ID  & \multicolumn{4}{l|}{TC13}                                                                                                     \\ \hline
+        Actors        & \multicolumn{4}{l|}{Owner}                                                                                                    \\ \hline
+        Main Scenario & \multicolumn{1}{l|}{Serial No}                                 & \multicolumn{3}{l|}{Steps}                                   \\ \hline
+        Actor/User    & \multicolumn{1}{l|}{1}                                         & \multicolumn{3}{l|}{U: Search with employee email}           \\ \hline
+                      & \multicolumn{1}{l|}{2}                                         & \multicolumn{3}{l|}{U: Click on add button}                  \\ \hline
+                      & \multicolumn{1}{l|}{3}                                         & \multicolumn{3}{l|}{S: Adds employee to organization}        \\ \hline
+        Extension     & \multicolumn{1}{l|}{1}                                         & \multicolumn{3}{l|}{Employee email not found}                \\ \hline
+                      & \multicolumn{1}{l|}{2}                                         & \multicolumn{3}{l|}{Employee is alredy part of organization} \\ \hline
+    \end{tabular}
+\end{table}
+\newpage
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{|l|llll|}
+        \hline
+        Description   & \multicolumn{4}{l|}{The Owner removes  member from organization}                                                             \\ \hline
+        Use Case ID   & \multicolumn{4}{l|}{UC14}                                                                                                    \\ \hline
+        Test Case ID  & \multicolumn{4}{l|}{TC14}                                                                                                    \\ \hline
+        Actors        & \multicolumn{4}{l|}{Owner}                                                                                                   \\ \hline
+        Main Scenario & \multicolumn{1}{l|}{Serial No}                                   & \multicolumn{3}{l|}{Steps}                                \\ \hline
+        Actor/User    & \multicolumn{1}{l|}{1}                                           & \multicolumn{3}{l|}{U: Search with employee email}        \\ \hline
+                      & \multicolumn{1}{l|}{2}                                           & \multicolumn{3}{l|}{U: Click on remove button}            \\ \hline
+                      & \multicolumn{1}{l|}{3}                                           & \multicolumn{3}{l|}{S: Removes employee to organization}  \\ \hline
+        Extension     & \multicolumn{1}{l|}{1}                                           & \multicolumn{3}{l|}{Employee email not found}             \\ \hline
+                      & \multicolumn{1}{l|}{2}                                           & \multicolumn{3}{l|}{Employee is not part of organization} \\ \hline
+    \end{tabular}
+\end{table}
