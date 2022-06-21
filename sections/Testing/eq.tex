@@ -1,0 +1,113 @@
+\subsubsection*{Equivalence Partitioning}
+
+\subsubsubsection*{Register}
+\textbf{ Register}
+\begin{table}[]
+    \centering
+    \begin{tabular}{lllll}
+        Variable & Valid Classes                                                                                                                                                                                                & Invalid Classes                                                                                                  &  & \\
+        Name     & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets\\ [a-z A-Z], numeric values [0-9], and special\\ character [@].\end{tabular}                                                           & 1. Empty Field                                                                                                   &  & \\
+        Email    & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets\\ [a-z A-Z], numeric\\ values [0-9] and special\\ character [@].\\ 3. Valid email address.\end{tabular}                                & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Special characters\\ except [@] is not\\ acceptable.\end{tabular} &  & \\
+        Password & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Length should be 8 or\\ greater than 8characters.\\ 3. May contain symbols,\\ alphabets [a-z A-Z],\\ digits [0-9] and special\\ characters.\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8\\ characters.\end{tabular}                  &  &
+    \end{tabular}
+\end{table}
+
+\subsubsubsection*{Login}
+\textbf{ Login}
+\begin{table}[]
+    \centering
+    \begin{tabular}{lllll}
+        Variable & Valid Classes                                                                                                                                                                                                & Invalid Classes                                                                                                  &  & \\
+        Email    & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets\\ [a-z A-Z], numeric\\ values [0-9] and special\\ character [@].\\ 3. Valid email address.\end{tabular}                                & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Special characters\\ except [@] is not\\ acceptable.\end{tabular} &  & \\
+        Password & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Length should be 8 or\\ greater than 8characters.\\ 3. May contain symbols,\\ alphabets [a-z A-Z],\\ digits [0-9] and special\\ characters.\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8\\ characters.\end{tabular}                  &  &
+    \end{tabular}
+\end{table}
+
+\subsubsubsection*{Update Profile}
+\textbf{ Update Profile}
+\begin{table}[]
+    \centering
+    \begin{tabular}{lllll}
+        Variable         & Valid Classes                                                                                                                                                                                                & Invalid Classes                                                                                                  &  & \\
+        Name             & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets\\ [a-z A-Z], numeric values [0-9], and special\\ character [@].\end{tabular}                                                           & 1. Empty Field                                                                                                   &  & \\
+        Email            & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets\\ [a-z A-Z], numeric\\ values [0-9] and special\\ character [@].\\ 3. Valid email address.\end{tabular}                                & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Special characters\\ except [@] is not\\ acceptable.\end{tabular} &  & \\
+        Password         & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Length should be 8 or\\ greater than 8characters.\\ 3. May contain symbols,\\ alphabets [a-z A-Z],\\ digits [0-9] and special\\ characters.\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8\\ characters.\end{tabular}                  &  &
+        Confirm Password & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Length should be 8 or\\ greater than 8characters.\\ 3. May contain symbols,\\ alphabets [a-z A-Z],\\ digits [0-9] and special\\ characters.\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8\\ characters.\end{tabular}                  &  &
+    \end{tabular}
+\end{table}
+
+\subsubsubsection*{Add Project}
+\textbf{ Update Profile}
+\begin{table}[]
+    \centering
+    \begin{tabular}{lllll}
+        \hline
+        Variable     & Valid Classes                                                                                                                                                                   & Invalid Classes                                                                                                  &  & \\ \hline
+        Project Name & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets [a-z\\ A-Z], numeric values\\ [0-9].\end{tabular}                                                         & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular}                                     &  & \\
+        Organization & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets\\ [a-z A-Z], numeric\\ values [0-9] and special\\ character [@].\\ 3. Valid email address.\end{tabular}   & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Special characters\\ except [@] is not\\ acceptable.\end{tabular} &  & \\
+        Actors       & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. May contain symbols,\\ alphabets [a-z A-Z],\\ digits [0-9] and special\\ characters.\\ 3. Select Type of Actor\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8\\ characters.\end{tabular}                  &  &
+        Usecases     & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. May contain symbols,\\ alphabets [a-z A-Z],\\ digits [0-9] and special\\ characters.\\ 3. Select Type of Actor\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8\\ characters.\end{tabular}                  &  &
+    \end{tabular}
+\end{table}
+
+\subsubsubsection*{Add Organization}
+\textbf{ Update Profile}
+\begin{table}[]
+    \centering
+    \begin{tabular}{lllll}
+        \hline
+        Variable       & Valid Classes                                                                                                           & Invalid Classes                                                              &  & \\ \hline
+        Company Name   & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets [a-z\\ A-Z], numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  & \\
+        Company Slogan & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets [a-z\\ A-Z], numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  & \\
+    \end{tabular}
+\end{table}
+
+\subsubsection*{UCP Estimation}
+\textbf{UCP Estimation}
+\begin{table}[]
+    \centering
+    \begin{tabular}{lllll}
+        \hline
+        Variable     & Valid Classes                                                                                              & Invalid Classes                                                              &  & \\ \hline
+        UCP variable & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  &
+    \end{tabular}
+\end{table}
+
+\subsubsection*{Delphi Estimation}
+\textbf{UCP Estimation}
+\begin{table}[]
+    \centering
+    \begin{tabular}{lllll}
+        \hline
+        Variable                   & Valid Classes                                                                                              & Invalid Classes                                                              &  & \\ \hline
+        Delphi variable            & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  &
+        Delphi array of estimation & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  &
+        Delphi result              & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  &
+    \end{tabular}
+\end{table}
+
+\subsubsection*{Machine Learning Estimation}
+\textbf{UCP Estimation}
+\begin{table}[]
+    \centering
+    \begin{tabular}{lllll}
+        \hline
+        Variable                & Valid Classes                                                                                              & Invalid Classes                                                              &  & \\ \hline
+        Machine variable        & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  &
+        Machine Result Variable & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  &
+    \end{tabular}
+\end{table}
+
+
+\subsubsection*{Esembled Module Estimation}
+\textbf{UCP Estimation}
+\begin{table}[]
+    \centering
+    \begin{tabular}{lllll}
+        \hline
+        Variable                & Valid Classes                                                                                              & Invalid Classes                                                              &  & \\ \hline
+        Esemble variable        & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  &
+        Esemble Result Variable & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  &
+    \end{tabular}
+\end{table}
+
