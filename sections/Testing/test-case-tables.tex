@@ -1,0 +1,531 @@
+
+\begin{center}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{ID}                 & TC\_Register\_Success                      \\
+        \hline
+        \textbf{Priority}           & High                                       \\
+        \hline
+        \textbf{Description}        & Register a new user with valid credentials \\
+        \hline
+        \textbf{Reference}          & UC-1                                       \\
+        \hline
+        \textbf{Pre-requisite}      & i) User should not be registered already
+
+        ii) User should be on the registration page
+
+        iii)  User should has a internet connection                              \\
+        \hline
+        \textbf{Steps to reproduce} & 1.
+
+        Enter valid credentials in the registration form 2.
+
+        Click on Register button 3.
+
+        User should be registered successfully                                   \\
+        \hline
+        \textbf{Input}              & Valid information in the form              \\
+        \hline
+        \textbf{Expected Result}    & User should be registered successfully     \\
+        \hline
+        \textbf{Status}             & Passed                                     \\
+        \hline
+    \end{tabularx}
+\end{center}
+\vspace{5mm}
+
+
+
+\begin{center}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{ID}                 & TC\_Register\_Fail                             \\
+        \hline
+        \textbf{Priority}           & High                                           \\
+        \hline
+        \textbf{Description}        & Register a new user with valid credentials     \\
+        \hline
+        \textbf{Reference}          & UC-1                                           \\
+        \hline
+        \textbf{Pre-requisite}      & i) User should not be registered already
+
+        ii) User should be on the registration page
+
+        iii)  User should has a internet connection                                  \\
+        \hline
+        \textbf{Steps to reproduce} & 1.
+
+        Enter valid credentials in the registration form 2.
+
+        Click on Register button 3.
+
+        User should be registered successfully                                       \\
+        \hline
+        \textbf{Input}              & invalid and incomplete information in the form \\
+        \hline
+        \textbf{Expected Result}    & Failed to register in the system               \\
+        \hline
+        \textbf{Status}             & Passed                                         \\
+        \hline
+    \end{tabularx}
+\end{center}
+\newpage
+
+
+\begin{center}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{ID}                 & TC\_Login\_Success                   \\
+        \hline
+        \textbf{Priority}           & High                                 \\
+        \hline
+        \textbf{Description}        & User wants to login into the system  \\
+        \hline
+        \textbf{Reference}          & UC-2,UC-3                            \\
+        \hline
+        \textbf{Pre-requisite}      & i) User should be registered already
+
+        ii) User should be on the Login page
+
+        iii)  User should has a internet connection                        \\
+        \hline
+        \textbf{Steps to reproduce} & 1.
+
+        Visit the website 2.
+
+        Enter valid credentials in the Login form 3.
+
+        Click on Login button                                              \\
+        \hline
+        \textbf{Input}              & Valid information in the form        \\
+        \hline
+        \textbf{Expected Result}    & User should be login successfully    \\
+        \hline
+        \textbf{Status}             & Passed                               \\
+        \hline
+    \end{tabularx}
+\end{center}
+\vspace{5mm}
+
+
+
+\begin{center}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{ID}                 & TC\_Login\_Fail                      \\
+        \hline
+        \textbf{Priority}           & High                                 \\
+        \hline
+        \textbf{Description}        & User wants to login into the system  \\
+        \hline
+        \textbf{Reference}          & UC-2,UC-3                            \\
+        \hline
+        \textbf{Pre-requisite}      & i) User should be registered already
+
+        ii) User should be on the Login page
+
+        iii)  User should has a internet connection                        \\
+        \hline
+        \textbf{Steps to reproduce} & 1.
+
+        Visit the website 2.
+
+        Enter valid credentials in the Login form 3.
+
+        Click on Login button                                              \\
+        \hline
+        \textbf{Input}              & invalid information in the form      \\
+        \hline
+        \textbf{Expected Result}    & User failed to login successfully    \\
+        \hline
+        \textbf{Status}             & Passed                               \\
+        \hline
+    \end{tabularx}
+\end{center}
+\newpage
+
+
+\begin{center}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{ID}                 & TC\_Logout\_Pass                       \\
+        \hline
+        \textbf{Priority}           & High                                   \\
+        \hline
+        \textbf{Description}        & User wants to Logout from the system   \\
+        \hline
+        \textbf{Reference}          & UC-20                                  \\
+        \hline
+        \textbf{Pre-requisite}      & i)User must visit website
+
+        ii) User should has a internet connection
+
+        iii) User should be online
+
+        iv) User should be logged in                                         \\
+        \hline
+        \textbf{Steps to reproduce} & 1.
+
+        Visit the website 2.
+
+        Login to the system 3.
+
+        Click on Logout button                                               \\
+        \hline
+        \textbf{Input}              & Click on Logout button                 \\
+        \hline
+        \textbf{Expected Result}    & User should be logged out successfully \\
+        \hline
+        \textbf{Status}             & Passed                                 \\
+        \hline
+    \end{tabularx}
+\end{center}
+\vspace{5mm}
+
+
+
+\begin{center}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{ID}                 & TC\_Logout\_Fail                     \\
+        \hline
+        \textbf{Priority}           & High                                 \\
+        \hline
+        \textbf{Description}        & User wants to logout from the system \\
+        \hline
+        \textbf{Reference}          & UC-20                                \\
+        \hline
+        \textbf{Pre-requisite}      & i)User must visit website
+
+        ii) User should has a internet connection
+
+        iii) User should be online
+
+        iv) User should be logged in                                       \\
+        \hline
+        \textbf{Steps to reproduce} & 1.
+
+        Visit the website 2.
+
+        Login to the system 3.
+
+        Click on Logout button                                             \\
+        \hline
+        \textbf{Input}              & unable to click on Logout button     \\
+        \hline
+        \textbf{Expected Result}    & User failed to logout successfully   \\
+        \hline
+        \textbf{Status}             & Passed                               \\
+        \hline
+    \end{tabularx}
+\end{center}
+\newpage
+
+
+\begin{center}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{ID}                 & TC\_ResetPassword\_Pass                    \\
+        \hline
+        \textbf{Priority}           & High                                       \\
+        \hline
+        \textbf{Description}        & User wants to reset their password         \\
+        \hline
+        \textbf{Reference}          & UC-05                                      \\
+        \hline
+        \textbf{Pre-requisite}      & i)User must login
+
+        ii) User should has a internet connection
+
+        iii) User should be online
+
+        iv) User should have an account                                          \\
+        \hline
+        \textbf{Steps to reproduce} & 1.
+
+        Visit the setting 2.
+
+        Click on change password button 3.
+
+        Click on Reset button                                                    \\
+        \hline
+        \textbf{Input}              & Click on Reset Password button             \\
+        \hline
+        \textbf{Expected Result}    & User should be reset password successfully \\
+        \hline
+        \textbf{Status}             & Passed                                     \\
+        \hline
+    \end{tabularx}
+\end{center}
+\vspace{5mm}
+
+
+
+\begin{center}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{ID}                 & TC\_ResetPassword\_Fail                    \\
+        \hline
+        \textbf{Priority}           & High                                       \\
+        \hline
+        \textbf{Description}        & User wants to reset their password         \\
+        \hline
+        \textbf{Reference}          & UC-05                                      \\
+        \hline
+        \textbf{Pre-requisite}      & i)User must login
+
+        ii) User should has a internet connection
+
+        iii) User should be online
+
+        iv) User should have an account                                          \\
+        \hline
+        \textbf{Steps to reproduce} & 1.
+
+        Visit the setting 2.
+
+        Click on change password button 3.
+
+        Click on Reset button                                                    \\
+        \hline
+        \textbf{Input}              & Click on Reset Password button             \\
+        \hline
+        \textbf{Expected Result}    & User failed to reset password successfully \\
+        \hline
+        \textbf{Status}             & Passed                                     \\
+        \hline
+    \end{tabularx}
+\end{center}
+\newpage
+
+
+\begin{center}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{ID}                 & TC\_EditAccount\_Pass                                           \\
+        \hline
+        \textbf{Priority}           & High                                                            \\
+        \hline
+        \textbf{Description}        & User wants to edit their details                                \\
+        \hline
+        \textbf{Reference}          & UC-08                                                           \\
+        \hline
+        \textbf{Pre-requisite}      & i)User must login
+
+        ii) User should has a internet connection
+
+        iii) User should be online
+
+        iv) User should have an account                                                               \\
+        \hline
+        \textbf{Steps to reproduce} & 1.
+
+        Visit the setting 2.
+
+        Click on update profile button 3.
+
+        Update and fill the form 4.Click on update button                                             \\
+        \hline
+        \textbf{Input}              & Click on Update button and fill the form with valid information \\
+        \hline
+        \textbf{Expected Result}    & User should be updated successfully                             \\
+        \hline
+        \textbf{Status}             & Passed                                                          \\
+        \hline
+    \end{tabularx}
+\end{center}
+\vspace{5mm}
+
+
+
+\begin{center}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{ID}                 & TC\_EditAccount\_Fail                                             \\
+        \hline
+        \textbf{Priority}           & High                                                              \\
+        \hline
+        \textbf{Description}        & User wants to edit their details                                  \\
+        \hline
+        \textbf{Reference}          & UC-08                                                             \\
+        \hline
+        \textbf{Pre-requisite}      & i)User must login
+
+        ii) User should has a internet connection
+
+        iii) User should be online
+
+        iv) User should have an account                                                                 \\
+        \hline
+        \textbf{Steps to reproduce} & 1.
+
+        Visit the setting 2.
+
+        Click on update profile button 3.
+
+        Update and fill the form 4.Click on update button                                               \\
+        \hline
+        \textbf{Input}              & Click on Update button and fill the form with invalid information \\
+        \hline
+        \textbf{Expected Result}    & User should not be updated successfully                           \\
+        \hline
+        \textbf{Status}             & Passed                                                            \\
+        \hline
+    \end{tabularx}
+\end{center}
+\newpage
+
+
+\begin{center}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{ID}                 & TC\_EditAccountInterface\_Pass                           \\
+        \hline
+        \textbf{Priority}           & High                                                     \\
+        \hline
+        \textbf{Description}        & User wants to edit their UI                              \\
+        \hline
+        \textbf{Reference}          & UC-09                                                    \\
+        \hline
+        \textbf{Pre-requisite}      & i)User must login
+
+        ii) User should has a internet connection
+
+        iii) User should be online
+
+        iv) User should have an account                                                        \\
+        \hline
+        \textbf{Steps to reproduce} & 1.
+
+        Visit the setting 2.
+
+        Click on update profile button 3.
+
+        Choose the theme which you like 4.Click on save button                                 \\
+        \hline
+        \textbf{Input}              & Choose the theme which you like and click on save button \\
+        \hline
+        \textbf{Expected Result}    & User should update the theme successfully                \\
+        \hline
+        \textbf{Status}             & Passed                                                   \\
+        \hline
+    \end{tabularx}
+\end{center}
+\vspace{5mm}
+
+
+
+\begin{center}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{ID}                 & TC\_EditAccountInterface\_Fail                                   \\
+        \hline
+        \textbf{Priority}           & High                                                             \\
+        \hline
+        \textbf{Description}        & User wants to edit their UI                                      \\
+        \hline
+        \textbf{Reference}          & UC-09                                                            \\
+        \hline
+        \textbf{Pre-requisite}      & i)User must login
+
+        ii) User should has a internet connection
+
+        iii) User should be online
+
+        iv) User should have an account                                                                \\
+        \hline
+        \textbf{Steps to reproduce} & 1.
+
+        Visit the setting 2.
+
+        Click on update profile button 3.
+
+        Choose the theme which you like 4.Click on save button                                         \\
+        \hline
+        \textbf{Input}              & Choose the theme which you like and didinot click on save button \\
+        \hline
+        \textbf{Expected Result}    & User will no update the theme successfully                       \\
+        \hline
+        \textbf{Status}             & Passed                                                           \\
+        \hline
+    \end{tabularx}
+\end{center}
+\newpage
+
+
+\begin{center}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{ID}                 & TC\_NewProject\_Pass                          \\
+        \hline
+        \textbf{Priority}           & High                                          \\
+        \hline
+        \textbf{Description}        & User wants to create the new project          \\
+        \hline
+        \textbf{Reference}          & UC-10                                         \\
+        \hline
+        \textbf{Pre-requisite}      & i)User must login
+
+        ii) User should has a internet connection
+
+        iii) User should be online
+
+        iv) User should have an account with manager role                           \\
+        \hline
+        \textbf{Steps to reproduce} & 1.
+
+        Visit the Project tab 2.
+
+        Click on create new project button 3.
+
+        Fill up the requirements 4.Click on create project button                   \\
+        \hline
+        \textbf{Input}              & Enter the actors and use cases of the project \\
+        \hline
+        \textbf{Expected Result}    & Project will be created successfully          \\
+        \hline
+        \textbf{Status}             & Passed                                        \\
+        \hline
+    \end{tabularx}
+\end{center}
+\vspace{5mm}
+
+
+
+\begin{center}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{ID}                 & TC\_NewProject\_Fail                                  \\
+        \hline
+        \textbf{Priority}           & High                                                  \\
+        \hline
+        \textbf{Description}        & User wants to create the new project                  \\
+        \hline
+        \textbf{Reference}          & UC-10                                                 \\
+        \hline
+        \textbf{Pre-requisite}      & i)User must login
+
+        ii) User should has a internet connection
+
+        iii) User should be online
+
+        iv) User should have an account with manager role                                   \\
+        \hline
+        \textbf{Steps to reproduce} & 1.
+
+        Visit the Project tab 2.
+
+        Click on create new project button 3.
+
+        Fill up the requirements 4.Click on create project button                           \\
+        \hline
+        \textbf{Input}              & Enter the invlaid actors and use cases of the project \\
+        \hline
+        \textbf{Expected Result}    & Project will not be created successfully              \\
+        \hline
+        \textbf{Status}             & Passed                                                \\
+        \hline
+    \end{tabularx}
+\end{center}
+\newpage
+
