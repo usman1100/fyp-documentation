@@ -1,113 +1,612 @@
-\subsubsection*{Equivalence Partitioning}
+%Equivalnce Partioning
+\subsection*{Equivalence Partitioning}
 
-\subsubsubsection*{Register}
+% \textbf{ Register}
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{lllll}
+%         Variable & Valid Classes                                                                                                                                                                                              & Invalid Classes                                                                                                  &\\
+%         Name     & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets\\ [a-z A-Z], numeric values [0-9], and special\\ character [@].\end{tabular}                                                           & 1. Empty Field                                                                                                   &\\
+%         Email    & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets\\ [a-z A-Z], numeric\\ values [0-9] and special\\ character [@].\\ 3. Valid email address.\end{tabular}                                & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Special characters\\ except [@] is not\\ acceptable.\end{tabular} &\\
+%         Password & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Length should be 8 or\\ greater than 8characters.\\ 3. May contain symbols,\\ alphabets [a-z A-Z],\\ digits [0-9] and special\\ characters.\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8\\ characters.\end{tabular}                  &
+%     \end{tabular}
+% \end{table}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+
+
+
 \textbf{ Register}
-\begin{table}[]
+
+\begin{table}[H]
     \centering
-    \begin{tabular}{lllll}
-        Variable & Valid Classes                                                                                                                                                                                                & Invalid Classes                                                                                                  &  & \\
-        Name     & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets\\ [a-z A-Z], numeric values [0-9], and special\\ character [@].\end{tabular}                                                           & 1. Empty Field                                                                                                   &  & \\
-        Email    & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets\\ [a-z A-Z], numeric\\ values [0-9] and special\\ character [@].\\ 3. Valid email address.\end{tabular}                                & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Special characters\\ except [@] is not\\ acceptable.\end{tabular} &  & \\
-        Password & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Length should be 8 or\\ greater than 8characters.\\ 3. May contain symbols,\\ alphabets [a-z A-Z],\\ digits [0-9] and special\\ characters.\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8\\ characters.\end{tabular}                  &  &
+    \begin{tabular}{|l|l|l|}
+        \hline
+        Variables                      & Valid Cases                                                                                                                                                                                                          & Invalid Field                                                                                                                \\ \hline
+        \multirow{3}{*}{Name}          & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabet [A-Z, a-z] , numeric values [0-9], and special character [@], \\3. Valid email address.\end{tabular}}                           & \multirow{3}{*}{1. Empty Field}                                                                                              \\
+                                       &                                                                                                                                                                                                                      &                                                                                                                              \\
+                                       &                                                                                                                                                                                                                      &                                                                                                                              \\ \hline
+        \multirow{3}{*}{User Email}    & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabet [A-Z, a-z] , numeric values [0-9], and special character [@], \\3. Valid email address.\end{tabular}}                           & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Special characters except [@] is not acceptable\end{tabular}} \\
+                                       &                                                                                                                                                                                                                      &                                                                                                                              \\
+                                       &                                                                                                                                                                                                                      &                                                                                                                              \\ \hline
+        \multirow{3}{*}{User Password} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Length should be 8 or greater than 8characters.\\ 3. May contain symbols, alphabets [a-z A-Z], digits [0-9] and special characters\end{tabular}} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8 characters.\end{tabular}}               \\
+                                       &                                                                                                                                                                                                                      &                                                                                                                              \\
+                                       &                                                                                                                                                                                                                      &                                                                                                                              \\ \hline
     \end{tabular}
 \end{table}
 
-\subsubsubsection*{Login}
+
+
+
+
 \textbf{ Login}
-\begin{table}[]
+
+\begin{table}[H]
     \centering
-    \begin{tabular}{lllll}
-        Variable & Valid Classes                                                                                                                                                                                                & Invalid Classes                                                                                                  &  & \\
-        Email    & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets\\ [a-z A-Z], numeric\\ values [0-9] and special\\ character [@].\\ 3. Valid email address.\end{tabular}                                & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Special characters\\ except [@] is not\\ acceptable.\end{tabular} &  & \\
-        Password & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Length should be 8 or\\ greater than 8characters.\\ 3. May contain symbols,\\ alphabets [a-z A-Z],\\ digits [0-9] and special\\ characters.\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8\\ characters.\end{tabular}                  &  &
+    \begin{tabular}{|l|l|l|}
+        \hline
+        Variables                      & Valid Cases                                                                                                                                                                                                          & Invalid Field                                                                                                                \\ \hline
+
+
+
+        \multirow{3}{*}{User Email}    & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabet [A-Z, a-z] , numeric values [0-9], and special character [@], \\3. Valid email address.\end{tabular}}                           & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Special characters except [@] is not acceptable\end{tabular}} \\
+                                       &                                                                                                                                                                                                                      &                                                                                                                              \\
+                                       &                                                                                                                                                                                                                      &                                                                                                                              \\ \hline
+        \multirow{3}{*}{User Password} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Length should be 8 or greater than 8characters.\\ 3. May contain symbols, alphabets [a-z A-Z], digits [0-9] and special characters\end{tabular}} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8 characters.\end{tabular}}               \\
+                                       &                                                                                                                                                                                                                      &                                                                                                                              \\
+                                       &                                                                                                                                                                                                                      &                                                                                                                              \\ \hline
     \end{tabular}
 \end{table}
 
-\subsubsubsection*{Update Profile}
+\pagebreak
+
+
 \textbf{ Update Profile}
-\begin{table}[]
-    \centering
-    \begin{tabular}{lllll}
-        Variable         & Valid Classes                                                                                                                                                                                                & Invalid Classes                                                                                                  &  & \\
-        Name             & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets\\ [a-z A-Z], numeric values [0-9], and special\\ character [@].\end{tabular}                                                           & 1. Empty Field                                                                                                   &  & \\
-        Email            & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets\\ [a-z A-Z], numeric\\ values [0-9] and special\\ character [@].\\ 3. Valid email address.\end{tabular}                                & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Special characters\\ except [@] is not\\ acceptable.\end{tabular} &  & \\
-        Password         & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Length should be 8 or\\ greater than 8characters.\\ 3. May contain symbols,\\ alphabets [a-z A-Z],\\ digits [0-9] and special\\ characters.\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8\\ characters.\end{tabular}                  &  &
-        Confirm Password & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Length should be 8 or\\ greater than 8characters.\\ 3. May contain symbols,\\ alphabets [a-z A-Z],\\ digits [0-9] and special\\ characters.\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8\\ characters.\end{tabular}                  &  &
-    \end{tabular}
-\end{table}
 
-\subsubsubsection*{Add Project}
-\textbf{ Update Profile}
-\begin{table}[]
+\begin{table}[H]
     \centering
-    \begin{tabular}{lllll}
+    \begin{tabular}{|l|l|l|}
         \hline
-        Variable     & Valid Classes                                                                                                                                                                   & Invalid Classes                                                                                                  &  & \\ \hline
-        Project Name & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets [a-z\\ A-Z], numeric values\\ [0-9].\end{tabular}                                                         & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular}                                     &  & \\
-        Organization & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets\\ [a-z A-Z], numeric\\ values [0-9] and special\\ character [@].\\ 3. Valid email address.\end{tabular}   & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Special characters\\ except [@] is not\\ acceptable.\end{tabular} &  & \\
-        Actors       & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. May contain symbols,\\ alphabets [a-z A-Z],\\ digits [0-9] and special\\ characters.\\ 3. Select Type of Actor\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8\\ characters.\end{tabular}                  &  &
-        Usecases     & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. May contain symbols,\\ alphabets [a-z A-Z],\\ digits [0-9] and special\\ characters.\\ 3. Select Type of Actor\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8\\ characters.\end{tabular}                  &  &
+        Variables                         & Valid Cases                                                                                                                                                                                                          & Invalid Field                                                                                                                \\ \hline
+        \multirow{3}{*}{Name}             & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabet [A-Z, a-z] , numeric values [0-9], and special character [@], \\3. Valid email address.\end{tabular}}                           & \multirow{3}{*}{1. Empty Field}                                                                                              \\
+                                          &                                                                                                                                                                                                                      &                                                                                                                              \\
+                                          &                                                                                                                                                                                                                      &                                                                                                                              \\ \hline
+        \multirow{3}{*}{User Email}       & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabet [A-Z, a-z] , numeric values [0-9], and special character [@], \\3. Valid email address.\end{tabular}}                           & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Special characters except [@] is not acceptable\end{tabular}} \\
+                                          &                                                                                                                                                                                                                      &                                                                                                                              \\
+                                          &                                                                                                                                                                                                                      &                                                                                                                              \\ \hline
+        \multirow{3}{*}{User Password}    & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Length should be 8 or greater than 8characters.\\ 3. May contain symbols, alphabets [a-z A-Z], digits [0-9] and special characters\end{tabular}} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8 characters.\end{tabular}}               \\
+                                          &                                                                                                                                                                                                                      &                                                                                                                              \\
+                                          &                                                                                                                                                                                                                      &                                                                                                                              \\ \hline
+        \multirow{3}{*}{Confirm Password} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Length should be 8 or greater than 8characters.\\ 3. May contain symbols, alphabets [a-z A-Z], digits [0-9] and special characters\end{tabular}} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Length smaller than 8 characters.\end{tabular}}               \\
+                                          &                                                                                                                                                                                                                      &                                                                                                                              \\
+                                          &                                                                                                                                                                                                                      &                                                                                                                              \\ \hline
     \end{tabular}
 \end{table}
 
-\subsubsubsection*{Add Organization}
-\textbf{ Update Profile}
-\begin{table}[]
+
+
+\textbf{ Add Project}
+
+\begin{table}[H]
     \centering
-    \begin{tabular}{lllll}
+    \begin{tabular}{|l|l|l|}
         \hline
-        Variable       & Valid Classes                                                                                                           & Invalid Classes                                                              &  & \\ \hline
-        Company Name   & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets [a-z\\ A-Z], numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  & \\
-        Company Slogan & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets [a-z\\ A-Z], numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  & \\
+        Variables                     & Valid Cases                                                                                                                                                                                & Invalid Field                   \\ \hline
+        \multirow{3}{*}{Project Name} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabet [A-Z, a-z] , numeric values [0-9], and special character [@], \\3. Valid email address.\end{tabular}} & \multirow{3}{*}{1. Empty Field} \\
+                                      &                                                                                                                                                                                            &                                 \\
+                                      &                                                                                                                                                                                            &                                 \\ \hline
+        \multirow{3}{*}{Organization} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabet [A-Z, a-z] , numeric values [0-9], and special character [@], \\3. Valid email address.\end{tabular}} & \multirow{3}{*}{1. Empty Field} \\
+                                      &                                                                                                                                                                                            &                                 \\
+                                      &                                                                                                                                                                                            &                                 \\ \hline
+        \multirow{3}{*}{Actors}       & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabet [A-Z, a-z] , numeric values [0-9], and special character [@], \\3. Valid email address.\end{tabular}} & \multirow{3}{*}{1. Empty Field} \\
+                                      &                                                                                                                                                                                            &                                 \\
+                                      &                                                                                                                                                                                            &                                 \\ \hline
+        \multirow{3}{*}{Usecases}     & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabet [A-Z, a-z] , numeric values [0-9], and special character [@], \\3. Valid email address.\end{tabular}} & \multirow{3}{*}{1. Empty Field} \\
+                                      &                                                                                                                                                                                            &                                 \\
+                                      &                                                                                                                                                                                            &                                 \\ \hline
+                                      &                                                                                                                                                                                                                              \\ \hline
     \end{tabular}
 \end{table}
 
-\subsubsection*{UCP Estimation}
-\textbf{UCP Estimation}
-\begin{table}[]
+
+
+
+\textbf{ Add Organization}
+
+\begin{table}[H]
     \centering
-    \begin{tabular}{lllll}
+    \begin{tabular}{|l|l|l|}
         \hline
-        Variable     & Valid Classes                                                                                              & Invalid Classes                                                              &  & \\ \hline
-        UCP variable & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  &
+        Variables                            & Valid Cases                                                                                                                                                                                & Invalid Field                   \\ \hline
+        \multirow{3}{*}{Organization Name}   & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabet [A-Z, a-z] , numeric values [0-9], and special character [@], \\3. Valid email address.\end{tabular}} & \multirow{3}{*}{1. Empty Field} \\
+                                             &                                                                                                                                                                                            &                                 \\
+                                             &                                                                                                                                                                                            &                                 \\ \hline
+        \multirow{3}{*}{Organization Slogan} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabet [A-Z, a-z] , numeric values [0-9], and special character [@], \\3. Valid email address.\end{tabular}} & \multirow{3}{*}{1. Empty Field} \\
+                                             &                                                                                                                                                                                            &                                 \\
+                                             &                                                                                                                                                                                            &                                 \\ \hline
+                                             &                                                                                                                                                                                                                              \\ \hline
     \end{tabular}
 \end{table}
 
-\subsubsection*{Delphi Estimation}
-\textbf{UCP Estimation}
-\begin{table}[]
+
+\textbf{ Delphi Estimation}
+
+
+\begin{table}[H]
     \centering
-    \begin{tabular}{lllll}
+    \begin{tabular}{|l|l|l|}
         \hline
-        Variable                   & Valid Classes                                                                                              & Invalid Classes                                                              &  & \\ \hline
-        Delphi variable            & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  &
-        Delphi array of estimation & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  &
-        Delphi result              & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  &
+        Variables                        & Valid Cases                                                                                                       & Invalid Field                    \\ \hline
+        \multirow{3}{*}{Delphi variable} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain numeric values [0-9], \end{tabular}}  & \multirow{3}{*}{1. Empty Field } \\
+                                         &                                                                                                                   &                                  \\
+                                         &                                                                                                                   &                                  \\ \hline
+        \multirow{3}{*}{Delphi Result}   & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain numeric values [0-9],  \end{tabular}} & \multirow{3}{*}{1. Empty Field}  \\
+                                         &                                                                                                                   &                                  \\
+                                         &                                                                                                                   &                                  \\ \hline
+                                         &                                                                                                                                                      \\ \hline
     \end{tabular}
 \end{table}
+\pagebreak
 
-\subsubsection*{Machine Learning Estimation}
-\textbf{UCP Estimation}
-\begin{table}[]
+\textbf{ UCP Estimation}
+
+
+\begin{table}[H]
     \centering
-    \begin{tabular}{lllll}
+    \begin{tabular}{|l|l|l|}
         \hline
-        Variable                & Valid Classes                                                                                              & Invalid Classes                                                              &  & \\ \hline
-        Machine variable        & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  &
-        Machine Result Variable & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  &
+        Variables                     & Valid Cases                                                                                                       & Invalid Field                    \\ \hline
+        \multirow{3}{*}{UCP variable} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain numeric values [0-9], \end{tabular}}  & \multirow{3}{*}{1. Empty Field } \\
+                                      &                                                                                                                   &                                  \\
+                                      &                                                                                                                   &                                  \\ \hline
+        \multirow{3}{*}{UCP Result}   & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain numeric values [0-9],  \end{tabular}} & \multirow{3}{*}{1. Empty Field } \\
+                                      &                                                                                                                   &                                  \\
+                                      &                                                                                                                   &                                  \\ \hline
+                                      &                                                                                                                                                      \\ \hline
     \end{tabular}
 \end{table}
 
 
-\subsubsection*{Esembled Module Estimation}
-\textbf{UCP Estimation}
-\begin{table}[]
+\textbf{ Machine Learning Estimation}
+
+
+\begin{table}[H]
     \centering
-    \begin{tabular}{lllll}
+    \begin{tabular}{|l|l|l|}
         \hline
-        Variable                & Valid Classes                                                                                              & Invalid Classes                                                              &  & \\ \hline
-        Esemble variable        & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  &
-        Esemble Result Variable & \begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain alphabets numeric values\\ [0-9].\end{tabular} & \begin{tabular}[c]{@{}l@{}}1. Empty Field\\ 2. Submitting Error\end{tabular} &  &
+        Variables                                 & Valid Cases                                                                                                       & Invalid Field                    \\ \hline
+        \multirow{3}{*}{Machine Learing variable} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain numeric values [0-9], \end{tabular}}  & \multirow{3}{*}{1. Empty Field } \\
+                                                  &                                                                                                                   &                                  \\
+                                                  &                                                                                                                   &                                  \\ \hline
+        \multirow{3}{*}{Machine Learning Result}  & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain numeric values [0-9],  \end{tabular}} & \multirow{3}{*}{1. Empty Field } \\
+                                                  &                                                                                                                   &                                  \\
+                                                  &                                                                                                                   &                                  \\ \hline
+                                                  &                                                                                                                                                      \\ \hline
     \end{tabular}
 \end{table}
 
+
+
+\textbf{ Essembled Module Estimation}
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|}
+        \hline
+        Variables                                  & Valid Cases                                                                                                       & Invalid Field                    \\ \hline
+        \multirow{3}{*}{Essembled Module variable} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain numeric values [0-9], \end{tabular}}  & \multirow{3}{*}{1. Empty Field } \\
+                                                   &                                                                                                                   &                                  \\
+                                                   &                                                                                                                   &                                  \\ \hline
+        \multirow{3}{*}{Essembled Module Result}   & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}1. Compulsory field\\ 2. Contain numeric values [0-9],  \end{tabular}} & \multirow{3}{*}{1. Empty Field } \\
+                                                   &                                                                                                                   &                                  \\
+                                                   &                                                                                                                   &                                  \\ \hline
+                                                   &                                                                                                                                                      \\ \hline
+    \end{tabular}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% % Boundary Value Analysis
+% \subsubsection*{Boundary Value Analysis}
+% Boundary value analysis is a software testing technique in which tests are designed to include
+% representatives of boundary values in a range.
+
+
+% \subsubsubsection*{ Register}
+% \textbf{Register}
+% The given table is based on Name:
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 1 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 23\\ letters.\end{tabular} & 24 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 24 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+% The given table is based on Email
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                              \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}      & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 2 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 253\\ letters.\end{tabular} & 254 letters.                                              & \begin{tabular}[c]{@{}l@{}}Greater than\\ 254 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+% The given table is based on Password:
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 1 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 23\\ letters.\end{tabular} & 24 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 24 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+
+% \subsubsubsection*{ Login}
+% \textbf{Login}
+
+% The given table is based on Email
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                              \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}      & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 2 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 253\\ letters.\end{tabular} & 254 letters.                                              & \begin{tabular}[c]{@{}l@{}}Greater than\\ 254 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+% The given table is based on Password:
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 1 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 23\\ letters.\end{tabular} & 24 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 24 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+
+% \subsubsubsection*{ Profile Update}
+% \textbf{Profile Update}
+
+% The given table is based on Name:
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 1 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 23\\ letters.\end{tabular} & 24 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 24 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+% The given table is based on Email
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                              \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}      & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 2 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 253\\ letters.\end{tabular} & 254 letters.                                              & \begin{tabular}[c]{@{}l@{}}Greater than\\ 254 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+% The given table is based on Password:
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 1 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 23\\ letters.\end{tabular} & 24 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 24 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+
+% \subsubsubsection*{Add project}
+% \textbf{Add Project}
+% The given table is based on Name:
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 1 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 23\\ letters.\end{tabular} & 24 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 24 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+% The given table is based on Organization Name:
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 1 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 23\\ letters.\end{tabular} & 24 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 24 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+% The given table is based on Use Case
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 2 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 23\\ letters.\end{tabular} & 24 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 24 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+
+% The given table is based on Actor
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 2 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 23\\ letters.\end{tabular} & 24 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 24 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+
+% \subsubsubsection*{Add Organization}
+% \textbf{Add Organization}
+% The given table is based on Organization Name
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 1 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 23\\ letters.\end{tabular} & 24 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 24 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+% The given table is based on Organization Slogan
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 1 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 23\\ letters.\end{tabular} & 24 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 24 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+
+% \subsubsubsection*{UCP Estimation}
+% \textbf{UCP Estimation}
+
+% The given table is based on UCP Estimation Variable
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 2 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 11\\ letters.\end{tabular} & 11 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 11 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+
+% \subsubsubsection*{Delphi Estimation}
+% \textbf{Delphi Estimation}
+
+% The given table is based on Delphi Estimation Variable
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 2 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 11\\ letters.\end{tabular} & 11 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 11 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+
+% The given table is based on Delphi Estimation Array
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                              \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}      & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 2 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 65k\\ letters.\end{tabular} & 65k letters.                                              & \begin{tabular}[c]{@{}l@{}}Greater than\\ 65k letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+% The given Table is based on Delphi End Result
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 2 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 11\\ letters.\end{tabular} & 11 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 11 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+
+% \subsubsubsection*{Machine Learning Estimation}
+% \textbf{Machine Learning Estimation}
+
+% The given table is based on Machine Learning Estimation Variable
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 2 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 11\\ letters.\end{tabular} & 11 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 11 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+% The given Table is based on Machine Learning Result
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 2 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 11\\ letters.\end{tabular} & 11 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 11 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+% \subsubsubsection*{Esemsbled Module Estimation}
+% \textbf{Machine Learning Estimation}
+
+% The given table is based on Esembled Module Estimation Variable
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 2 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 11\\ letters.\end{tabular} & 11 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 11 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+% The given Table is based on Esembled Module Result
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{llllll}
+%         \hline
+%         \multicolumn{3}{l}{Minimum Value}                           & \multicolumn{3}{l}{Maximum Value}                                                                                                                                                                                                                                                                                                             \\ \hline
+%         \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (min+1)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Invalid\\ Partition\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\end{tabular} & \begin{tabular}[c]{@{}l@{}}Valid\\ Partition\\ (Max +1)\end{tabular} \\
+%         Empty                                                       & \begin{tabular}[c]{@{}l@{}}1 letter is\\ valid input.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Greater than\\ 2 letter.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Less than 11\\ letters.\end{tabular} & 11 letters.                                               & \begin{tabular}[c]{@{}l@{}}Greater than\\ 11 letters.\end{tabular}
+%     \end{tabular}
+% \end{table}
+
+
+
+
+
+
+
+
+
+
+% %State Transition Testing
+% \subsubsection*{State Transition Testing}
+% State Transition testing, a black box testing technique, in which outputs are triggered by changes to
+% the input conditions or changes to 'state' of the system. In other words, tests are designed to execute
+% valid and invalid state transitions.
+
+% \subsubsubsection*{Register}
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{ll}
+%         State                       & Events                                                           \\
+%         idle                        & \begin{tabular}[c]{@{}l@{}}Register \\ Button Click\end{tabular} \\
+%         Account Created             & Request Accept                                                   \\
+%         Account Not Created         & Error                                                            \\
+%         \multirow{2}{*}{Processing} & Move to Home Page                                                \\
+%                                     & Retry
+%     \end{tabular}
+% \end{table}
+
+% \subsubsubsection*{Login}
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{ll}
+%         State                & Events             \\
+%         idle                 & Login Button Click \\
+%         Processing           & Request Accept     \\
+%         Account Accessed     & Error              \\
+%         Account not Accessed & Move to Home Page  \\
+%         Logged In            & Retry
+%     \end{tabular}
+% \end{table}
+
+% \subsubsubsection*{Profile Update}
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{ll}
+%         State               & Events              \\
+%         idle                & Update Button Click \\
+%         Processing          & Request Accept      \\
+%         Account Updated     & Error               \\
+%         Account Not updated & Retry
+%     \end{tabular}
+% \end{table}
+
+% \subsubsubsection*{ Estimation }
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{ll}
+%         State              & Events                  \\
+%         idle               & Estimation Button Click \\
+%         Processing         & Request Accept          \\
+%         Calculate Estimate & Error                   \\
+%         Estimate not shown & Retry
+%     \end{tabular}
+% \end{table}
+
+% \subsubsubsection*{ Delphi Estimation }
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{ll}
+%         State                       & Events                          \\
+%         idle                        & Click Delphi Estimation Button  \\
+%         \multirow{3}{*}{Processing} & Request Accept                  \\
+%                                     & Add Developer                   \\
+%                                     & Start Round                     \\
+%         Waiting                     & Developer give their estimation \\
+%         Processing                  & Generate Result                 \\
+%                                     & Retry
+%     \end{tabular}
+% \end{table}
+
+
+
+% \subsubsubsection*{Dashboard}
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{ll}
+%         State           & Events                 \\
+%         idle            & Click Dashboard Button \\
+%         Processing      & Request Accept         \\
+%         Show Dash Board & Error                  \\
+%                         & Retry
+%     \end{tabular}
+% \end{table}
