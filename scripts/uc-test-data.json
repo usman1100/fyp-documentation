@@ -1,0 +1,106 @@
+[
+    {
+        "description": "The User will log in to the application",
+        "ucid": "UC01",
+        "tcid": "TC01",
+        "actors": "User",
+        "a1": "U: Enter their credentials",
+        "a2": "U: Send credentials to system",
+        "a3": "S: Authorize the user",
+        "e1": "Invalid Credentials",
+        "e2": "Non existant primary key"
+    },
+    {
+        "description": "The User will register to the application",
+        "ucid": "UC01",
+        "tcid": "TC01",
+        "actors": "User",
+        "a1": "U: Enter their information",
+        "a2": "U: Send information to system",
+        "a3": "S: Authorize all the users information and check for duplication",
+        "e1": "Faulty information",
+        "e2": "Previously existing data"
+    },
+    {
+        "description": "The User recover their password",
+        "ucid": "UC01",
+        "tcid": "TC01",
+        "actors": "User",
+        "a1": "U: Enter their email",
+        "a2": "U: Send email to system",
+        "a3": "S: Check for email in database records",
+        "e1": "Invalid email format",
+        "e2": "Non existant email"
+    },
+    {
+        "description": "The User changes their password",
+        "ucid": "UC08",
+        "tcid": "TC08",
+        "actors": "User",
+        "a1": "U: Enter new password",
+        "a2": "U: Enter new password",
+        "a3": "S: Validate and update new password",
+        "e1": "Weak passowrd",
+        "e2": "New and old passwords are same"
+    },
+
+    {
+        "description": "The User updates their email",
+        "ucid": "UC08",
+        "tcid": "TC08",
+        "actors": "User",
+        "a1": "U: Enter new email",
+        "a2": "U: Send email to system",
+        "a3": "S: Check for email in database records",
+        "e1": "Invalid email format",
+        "e2": "Non existant email"
+    },
+
+    {
+        "description": "The Owner creates new organization",
+        "ucid": "UC11",
+        "tcid": "TC11",
+        "actors": "Owner",
+        "a1": "U: Enter organization name",
+        "a2": "U: Enter organization motto",
+        "a3": "S: Creates new organization in database",
+        "e1": "Invalid name or motto provided",
+        "e2": "Organization already exists"
+    },
+
+    {
+        "description": "The Owner adds new member to organization",
+        "ucid": "UC13",
+        "tcid": "TC13",
+        "actors": "Owner",
+        "a1": "U: Search with employee email",
+        "a2": "U: Click on add button",
+        "a3": "S: Adds employee to organization",
+        "e1": "Employee email not found",
+        "e2": "Employee is alredy part of organization"
+    },
+
+    {
+        "description": "The Owner adds new member to organization",
+        "ucid": "UC13",
+        "tcid": "TC13",
+        "actors": "Owner",
+        "a1": "U: Search with employee email",
+        "a2": "U: Click on add button",
+        "a3": "S: Adds employee to organization",
+        "e1": "Employee email not found",
+        "e2": "Employee is alredy part of organization"
+    },
+
+    {
+        "description": "The Owner removes  member from organization",
+        "ucid": "UC14",
+        "tcid": "TC14",
+        "actors": "Owner",
+        "a1": "U: Search with employee email",
+        "a2": "U: Click on remove button",
+        "a3": "S: Removes employee to organization",
+        "e1": "Employee email not found",
+        "e2": "Employee is not part of organization"
+    }
+]
